@@ -1,0 +1,61 @@
+.header {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: row;
+  background-color: black;
+  align-items: center;
+  justify-items: center;
+  padding: 20px 0px;
+  /* position: relative; */
+  clip-path: polygon(17% 0%, 84% 0%, 80% 100%, 20% 100%);
+  border: 2px solid black;
+  border-radius: 25px;
+  transition: 1s ease;
+}
+
+.header:hover {
+  padding-top: 25px;
+}
+
+.header-title {
+  font-family: "Product Sans";
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  padding-left: 13vw;
+  transition: 0.55s ease-in-out;
+}
+
+.header-title:hover {
+  font-size: 1.6rem;
+  font-weight: 700;
+  transform: translateY(-3px);
+  color: tan;
+  opacity: 85%;
+}
+
+.header-pages {
+  display: inline-flex;
+  padding-right: 13vw;
+  justify-items: center;
+}
+
+.header-element {
+  font-family: "Roboto";
+  font-weight: 430;
+  font-size: 19px;
+  align-self: center;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  transition: transform 1s ease;
+}
+
+.header-element:hover {
+  transition: 0.55s ease;
+  transform: translateY(-2px);
+  font-weight: 550;
+  color: tan;
+  opacity: 85%;
+}

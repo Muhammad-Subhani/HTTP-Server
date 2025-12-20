@@ -4,9 +4,16 @@ class Header extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-      <header>
-        <h1>Header</h1>
-      </header>
+    <header class="box-shadow">
+      <div class="header">
+        <div class="header-title">ICT Project</div>
+        <div class="header-pages">
+          <div class="header-element">Home</div>
+          <div class="header-element">Products</div>
+          <div class="header-element">About</div>
+        </div>
+      </div>
+    </header>
       `;
   }
 }
