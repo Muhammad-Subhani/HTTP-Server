@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+align-items: center;
+justify-content: center;
+background-color: black;
+}
+.dabba{
+  height: 600px;
+  width: 70vw;
+  background-color: orange;
+  overflow: hidden;
+}
+.screen{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  transition: all 2s;
+}
+.cdabba{
+  height: 100%;
+  min-width: 100%;
+
+}
+#db1{
+  background: url(https://images.squarespace-cdn.com/content/v1/5911f31c725e251d002da9ac/1613210424136-AS3MY547OBB5Y3GSQ359/Product+Photography);
+          background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+#db2{
+  background: url(https://cloudfront.slrlounge.com/wp-content/uploads/2022/08/best-canon-camera-for-photography.jpg);
+          background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+#db3{
+  background: url(https://iconicwp.com/wp-content/uploads/2023/08/subscription-box.png);
+          background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+#first{
+   font-family: "BBH Bogle", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-align: left;
+  font-size: 88px;
+}
+#fbtn{
+top: 29%;
+    position: relative;
+    left: 78%;
+    height: 66px;
+    width: 189px;
+    border-radius: 15px;
+       font-family: "BBH Bogle", sans-serif;
+       font-size: 30px;
+       color: white;
+         background: linear-gradient(to bottom, #8e2de2, #4a00e0); 
+         border: none;
+         transition: all 1s;
+}
+#fbtn:hover{
+transform: scale(0.95);
+}
+#second{
+     font-family: "BBH Bogle", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-align: right;
+  font-size: 95px;
+}
+#sbtn{
+background: linear-gradient(to top, #3c3b3f, #605c3c);
+    top: 25%;
+    position: relative;
+    right: -7%;
+    height: 66px;
+    width: 189px;
+    border-radius: 15px;
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 30px;
+    color: white;
+    border: none;
+    transition: all 1s;
+
+}
+#sbtn:hover{
+  transform: scale(0.95);
+}
+#third{
+font-family: "BBH Bogle", sans-serif;
+    font-weight: 400;
+    color: #4a3030;
+    text-align: center;
+    font-size: 81px;
+    padding-top: 188px;
+}
+#tbtn{
+    background: linear-gradient(to right, #ffefba, #ffffff);
+    top: 18%;
+    position: relative;
+    right: -41%;
+    height: 66px;
+    width: 189px;
+    border-radius: 15px;
+    font-family: "BBH Bogle", sans-serif;
+    font-size: 30px;
+    color: #4a3030;
+    border: none;
+    transition: all 1s;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+<div class="dabba">
+  <div class="screen">
+    <div class="cdabba" id="db1">
+<h1 id="first">  &nbsp;  GRAB <br> YOUR  &nbsp; NEW <br> &nbsp; SNEAKERS</h1>
+<button id="fbtn">SHOP NOW</button>
+    </div>
+    <div class="cdabba" id="db2">
+      <h1 id="second">Cannon   &nbsp;  &nbsp; <br>TO  &nbsp; BURST   &nbsp;      <br>  IN TECH  &nbsp; </h1>
+      <button id="sbtn">SHOP NOW</button>
+    </div>
+    <div class="cdabba" id="db3">
+      <h1 id="third">FASCINATING EMBROIDERY <br>  MUCH MORE</h1>
+      <button id="tbtn">SHOP NOW </button>
+    </div>
+  </div>
+</div>
+  </div>
+</body>
+<script>
+  const pics = document.querySelectorAll('.cdabba');
+  const screen = document.querySelector('.screen');
+  let i = 0;
+  function chalo(){
+    screen.style.transform = `translateX(-${i * 100}%)`;
+  }
+setInterval(()=>{
+  i++;
+  if(i>2){
+    i=0;
+  }
+  chalo()
+}, 3000)
+
+
+</script>
+</html>
