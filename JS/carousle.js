@@ -10,4 +10,4 @@ const pics = document.querySelectorAll(".cdabba");
         i = 0;
       }
       chalo();
-    }, 3000);
+    }, 4000);

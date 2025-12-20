@@ -12,7 +12,7 @@
         /* background-color: black; */
       }
       .dabba {
-        height: 700px;
+        height: 800px;
         width: 100vw;
         background-color: orange;
         overflow: hidden;
@@ -28,19 +28,19 @@
         min-width: 100%;
       }
       #db1 {
-        background: url(https://images.squarespace-cdn.com/content/v1/5911f31c725e251d002da9ac/1613210424136-AS3MY547OBB5Y3GSQ359/Product+Photography);
+        background: url(../images/Product+Photography);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
       }
       #db2 {
-        background: url(https://cloudfront.slrlounge.com/wp-content/uploads/2022/08/best-canon-camera-for-photography.jpg);
+        background: url(../images/ChatGPT\ Image\ Dec\ 20\,\ 2025\,\ 08_29_14\ PM.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
       }
       #db3 {
-        background: url(https://iconicwp.com/wp-content/uploads/2023/08/subscription-box.png);
+        background: url(../images/subscription-box.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -50,14 +50,15 @@
         font-weight: 400;
         color: white;
         text-align: left;
-        font-size: 88px;
+        font-size: 95px;
+        padding-top: 50px;
       }
       #fbtn {
-        top: 29%;
+        top: 20%;
         position: relative;
         left: 78%;
-        height: 66px;
-        width: 189px;
+        height: 80px;
+        width: 250px;
         border-radius: 15px;
         font-family: "BBH Bogle", sans-serif;
         font-size: 30px;
@@ -75,14 +76,15 @@
         color: white;
         text-align: right;
         font-size: 95px;
+        padding-top: 50px;
       }
       #sbtn {
         background: linear-gradient(to top, #3c3b3f, #605c3c);
-        top: 25%;
+        top: 7%;
         position: relative;
         right: -7%;
-        height: 66px;
-        width: 189px;
+        height: 80px;
+        width: 250px;
         border-radius: 15px;
         font-family: "BBH Bogle", sans-serif;
         font-size: 30px;
@@ -95,10 +97,10 @@
       }
       #third {
         font-family: "BBH Bogle", sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         color: #4a3030;
         text-align: center;
-        font-size: 81px;
+        font-size: 95px;
         padding-top: 188px;
       }
       #tbtn {
@@ -106,12 +108,15 @@
         top: 18%;
         position: relative;
         right: -41%;
-        height: 66px;
-        width: 189px;
+        height: 80px;
+        width: 250px;
         border-radius: 15px;
         font-family: "BBH Bogle", sans-serif;
         font-size: 30px;
         color: #4a3030;
         border: none;
         transition: all 1s;
+      }
+      #tbtn:hover{
+                transform: scale(0.95);
       }

@@ -6,7 +6,7 @@ class Header extends HTMLElement {
     this.innerHTML = `
     <header class="box-shadow">
       <div class="header">
-        <div class="header-title">ICT Project</div>
+        <div class="header-title">EFLYER</div>
         <div class="header-pages">
           <div class="header-element">Home</div>
           <div class="header-element">Products</div>
