@@ -1,60 +1,65 @@
-     .srch {
-    
-height: 45px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 8%;
-    z-index: 11;
-    margin: auto;
-    left: 21%;
-    right: 27%;
-      }
-      .material-symbols-outlined {
-        font-size: 39px;
-        color: white;
-      }
-      input {
-        width: 40vw;
-        height: 31px;
-        border-radius: 5px;
-        border: none;
-        position: relative;
-      }
-      .mag {
-        display: flex;
-        align-items: center;
-        background-color: #e66b0e;
-        height: 32px;
-        width: 37px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 4px;
-        transition: all 1s;
-      }
-      .mag:hover{
-        transform: scaleX(1.15);
-        background-color: #f9b24f;
-      }
-      .fa-solid {
-        color: white;
-            cursor: pointer;
-      }
-      *{
-        box-sizing: border-box;
-      }
-      #categories{
-    height: 35px;
-    margin-left: 4%;
-    width: 99px;
-    color: white;
-    background-color: #211e1e;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 1s;
-      }
-      #categories:hover{
-         color: tan;
-         transform: translateY(-1px);
-      }
+.srch {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 8%;
+  z-index: 11;
+  margin: auto;
+  margin-top: 30px;
+  left: 21%;
+  right: 27%;
+}
+.material-symbols-outlined {
+  font-size: 39px;
+  color: white;
+}
+input {
+  width: 40vw;
+  height: 31px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+}
+.mag {
+  display: flex;
+  align-items: center;
+  background-color: #e66b0e;
+  height: 32px;
+  width: 37px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 1s;
+}
+.mag:hover {
+  transform: scaleX(1.15);
+  background-color: #f9b24f;
+}
+.fa-solid {
+  color: white;
+  cursor: pointer;
+}
+* {
+  box-sizing: border-box;
+}
+#categories {
+  height: 35px;
+  margin-left: 4%;
+  width: 99px;
+  color: white;
+  background-color: #211e1e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 1s;
+}
+#categories:hover {
+  color: tan;
+  transform: translateY(-1px);
+}
+
+.pd-20 {
+  padding: 20px;
+}
+
