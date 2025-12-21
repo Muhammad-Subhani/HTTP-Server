@@ -17,6 +17,7 @@
 
     <!-- JS Scripts Import -->
     <script src="JS/carousle.js" type="text/javascript" defer></script>
+    <script src="JS/category.js" type="text/javascript" defer></script>
 
     <!-- Fonts -->
     <link
@@ -79,14 +80,40 @@
     <!-- Our Products Section -->
     <div id="Our-Products" class="products-section">
       <h1 class="product-section-heading">Our Products</h1>
+      <div class="categories">
+        <button onclick="showAll(event)" class="category">All</button>
+        <button onclick="showCards(event , 'elec')" class="category">
+          Electronics
+        </button>
+        <button onclick="showCards(event, 'shoewear')" class="category">
+          Shoewear
+        </button>
+      </div>
       <div class="products">
         <card-comp
           title="Sony Digital Camera"
           price="Rs 250,000"
           image="Assets/Products/Sony_Camera.jpg"
+          id="elec"
         ></card-comp>
-        <card-comp title="Sony Ultra HD Camera" price="Rs 450,000"></card-comp>
-        <card-comp title="Sony Digital Camera" price="Rs 250,000"></card-comp>
+        <card-comp
+          title="Ndure High Performance Sneakers"
+          price="Rs 2500"
+          image="Assets/Products/Ndure_sneakers.webp"
+          id="shoewear"
+        ></card-comp>
+        <card-comp
+          title="Sony Digital Camera"
+          price="Rs 250,000"
+          image="Assets/Products/Sony_Camera.jpg"
+          id="elec"
+        ></card-comp>
+        <card-comp
+          title="Ndure High Performance Sneakers"
+          price="Rs 2500"
+          image="Assets/Products/Ndure_sneakers.webp"
+          id="shoewear"
+        ></card-comp>
       </div>
     </div>
   </body>

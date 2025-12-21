@@ -21,15 +21,25 @@ body {
   padding: 20px;
   background-color: white;
   box-shadow: 1.5px 1.5px 5px 2px grey;
-  transition: all 1s;
+  transition: all 0.6s;
   margin: 0;
   align-items: center;
   justify-items: center;
+  animation: fadeEffect 1s;
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05) translateY(-7px);
   box-shadow: 2px 2px 5px 3px tan;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .card-title {
@@ -57,4 +67,13 @@ body {
 
 .product-image:hover {
   transform: scale(1.05);
+}
+
+#add-to-cart {
+  background-color: tan;
+  border: 1px solid tan;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
 }
