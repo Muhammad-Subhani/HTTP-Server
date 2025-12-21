@@ -35,9 +35,15 @@ body {
 .card-title {
   font-family: "Product Sans";
   font-weight: 550;
+  color: rgba(0, 0, 0, 0.9);
   font-size: 1vw;
   text-align: center;
   padding: 2vh 0px;
+  transition: all 1s ease;
+}
+
+.card-title:hover {
+  transform: scale(1.1);
 }
 
 .product-image {
@@ -46,4 +52,9 @@ body {
   max-width: 13vw;
   margin: auto;
   padding: 10px;
+  transition: all 1s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
 }

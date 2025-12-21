@@ -13,6 +13,7 @@
     <!-- JS HTML Components Import -->
     <script src="Components/header.js" type="text/javascript" defer></script>
     <script src="Components/searchbar.js" type="text/javascript" defer></script>
+    <script src="Components/card.js" type="text/javascript" defer></script>
 
     <!-- JS Scripts Import -->
     <script src="JS/carousle.js" type="text/javascript" defer></script>
@@ -79,51 +80,13 @@
     <div id="Our-Products" class="products-section">
       <h1 class="product-section-heading">Our Products</h1>
       <div class="products">
-        <div class="card">
-          <img
-            class="product-image"
-            src="Assets/Products/Sony_Camera.jpg"
-            alt="Product-Pic"
-          />
-          <h4 class="card-title">Sony Digital Camera</h4>
-          <span class="price">Rs 250,000</span>
-        </div>
-        <div class="card">
-          <img
-            class="product-image"
-            src="Assets/Products/Sony_Camera.jpg"
-            alt="Product-Pic"
-          />
-          <h4 class="card-title">Product Name</h4>
-          <span class="price">Rs 250,000</span>
-        </div>
-        <div class="card">
-          <img
-            class="product-image"
-            src="Assets/Products/Sony_Camera.jpg"
-            alt="Product-Pic"
-          />
-          <h4 class="card-title">Product Name</h4>
-          <span class="price">Rs 250,000</span>
-        </div>
-        <div class="card">
-          <img
-            class="product-image"
-            src="Assets/Products/Sony_Camera.jpg"
-            alt="Product-Pic"
-          />
-          <h4 class="card-title">Product Name</h4>
-          <span class="price">Rs 250,000</span>
-        </div>
-        <div class="card">
-          <img
-            class="product-image"
-            src="Assets/Products/Sony_Camera.jpg"
-            alt="Product-Pic"
-          />
-          <h4 class="card-title">Product Name</h4>
-          <span class="price">Rs 250,000</span>
-        </div>
+        <card-comp
+          title="Sony Digital Camera"
+          price="Rs 250,000"
+          image="Assets/Products/Sony_Camera.jpg"
+        ></card-comp>
+        <card-comp title="Sony Ultra HD Camera" price="Rs 450,000"></card-comp>
+        <card-comp title="Sony Digital Camera" price="Rs 250,000"></card-comp>
       </div>
     </div>
   </body>

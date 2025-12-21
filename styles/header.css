@@ -15,7 +15,7 @@
 }
 
 .header:hover {
-  transform: scale(1.02);
+  padding: 29px 0px;
 }
 
 .header-title {
