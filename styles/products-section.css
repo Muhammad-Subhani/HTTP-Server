@@ -1,0 +1,27 @@
+.products-section {
+  padding: 5vh 10vw;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 3vw;
+  flex-wrap: wrap;
+}
+
+.product-section-heading {
+  font-family: "BBH Bogle";
+  font-weight: 300;
+  font-size: 4rem;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 1s ease;
+}
+
+.product-section-heading:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 2px grey;
+}

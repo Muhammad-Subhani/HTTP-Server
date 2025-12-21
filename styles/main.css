@@ -3,3 +3,47 @@
   margin: auto;
   user-select: none;
 }
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 0px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 1.5px 1.5px 5px 2px grey;
+  transition: all 1s;
+  margin: 0;
+  align-items: center;
+  justify-items: center;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px 3px tan;
+}
+
+.card-title {
+  font-family: "Product Sans";
+  font-weight: 550;
+  font-size: 1vw;
+  text-align: center;
+  padding: 2vh 0px;
+}
+
+.product-image {
+  align-self: center;
+  justify-self: center;
+  max-width: 13vw;
+  margin: auto;
+  padding: 10px;
+}
