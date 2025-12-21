@@ -1,0 +1,57 @@
+.aboutus{
+
+    max-width: 100%;
+    height: 560px;
+ overflow-x: hidden;
+ box-sizing: border-box;
+     background-color: #f1f6fc;
+}
+#ABh{
+    text-align: center;
+    margin-top: 87px;
+    font-size: 29px;
+    font-family: sans-serif;
+}
+hr{
+    width: 153px;
+    margin-top: 15px;
+    height: 4px;
+    background-color: blue;
+}
+#FP{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #666161;
+}
+.emogi{
+display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 9px;
+    margin-top: 8px;
+}
+.inemogi{
+    height: 275px;
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+
+}
+#face{
+    font-size: 60px;
+    margin-top: 94px;
+}
+.inner{
+    padding-bottom: 26px;
+    color: #666161;
+    font-family: sans-serif
+}
+.part2{
+        max-width: 100%;
+    height: 560px;
+ overflow-x: hidden;
+ box-sizing: border-box;
+}
