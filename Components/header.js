@@ -4,15 +4,13 @@ class Header extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-    <header class="box-shadow">
-      <div class="header">
+    <header class="header box-shadow">
         <div class="header-title">EFLYER</div>
         <div class="header-pages">
           <div class="header-element">Home</div>
           <div class="header-element">Products</div>
           <div class="header-element">About</div>
         </div>
-      </div>
     </header>
       `;
   }
