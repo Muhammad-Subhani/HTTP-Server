@@ -1,0 +1,75 @@
+.products-section {
+  padding: 5vh 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 3vw;
+  flex-wrap: wrap;
+}
+
+.product-section-heading {
+  font-family: "BBH Bogle";
+  font-weight: 300;
+  font-size: 4rem;
+  text-align: center;
+  padding: 20px;
+  /* margin-bottom: 20px; */
+  transition: all 1s ease;
+}
+
+.product-section-heading:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 2px grey;
+}
+
+.product-description-row {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+}
+
+.product {
+}
+.categories {
+  text-align: center;
+  display: inline-flex;
+  gap: 12px;
+  align-self: center;
+  justify-self: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  border: 0px solid black;
+  border-radius: 30px;
+  margin-bottom: 4vh;
+}
+
+.category {
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  color: white;
+  border: 0px solid grey;
+  border-radius: 30px;
+  padding: 10px 13px;
+  transition: all 0.6s ease;
+}
+.category:hover {
+  transform: scale(1.05);
+  background-color: tan;
+  color: #000;
+}
+
+.active-category {
+  background-color: tan;
+  color: #000;
+}
