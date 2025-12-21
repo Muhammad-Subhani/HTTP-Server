@@ -12,6 +12,7 @@
         /* background-color: black; */
       }
       .dabba {
+        position: relative;
         height: 800px;
         width: 100vw;
         background-color: orange;
@@ -120,3 +121,25 @@
       #tbtn:hover{
                 transform: scale(0.95);
       }
+      #Forward{
+    border: none;
+    position: relative;
+    background: none;
+    left: 1500px;
+    font-size: 50px;
+    top: 304px;
+    color: #dea6a6;
+}
+#Previous{
+border: none;
+    position: relative;
+    background: none;
+    left: 315px;
+    font-size: 50px;
+    top: 304px;
+    color: #dea6a6;
+}
+.btnz{
+  position: absolute;
+  z-index: 12;
+}
