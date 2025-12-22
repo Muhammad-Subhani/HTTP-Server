@@ -1,0 +1,21 @@
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  padding: 5vh;
+}
+
+.footer-line {
+  width: 70vw;
+  color: tan;
+  background-color: tan;
+  height: 2px;
+}
+
+.copyright {
+  color: white;
+  font-family: "Product Sans";
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 2vh;
+  text-align: center;
+}
