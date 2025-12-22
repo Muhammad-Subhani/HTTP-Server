@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: center;
   gap: 1em;
-  animation: spin 5s infinite linear;
+  animation: spin 10s infinite linear;
 }
 @keyframes spin {
   from {
