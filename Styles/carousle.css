@@ -29,19 +29,19 @@
   min-width: 100%;
 }
 #db1 {
-  background: url(../images/Product+Photography);
+  background: url(../Assets/Images/Product+Photography);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #db2 {
-  background: url(../images/ChatGPT\ Image\ Dec\ 20\,\ 2025\,\ 08_29_14\ PM.png);
+  background: url(../Assets/Images/ChatGPT\ Image\ Dec\ 20\,\ 2025\,\ 08_29_14\ PM.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #db3 {
-  background: url(../images/subscription-box.png);
+  background: url(../Assets/Images/subscription-box.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -143,4 +143,3 @@
   position: absolute;
   z-index: 12;
 }
-
