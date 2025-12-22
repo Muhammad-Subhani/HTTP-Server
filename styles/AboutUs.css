@@ -12,9 +12,13 @@
 }
 hr {
   width: 153px;
-  margin-top: 15px;
-  height: 4px;
+  margin-top: 9px;
+  height: 6px;
   background-color: rgb(44, 5, 5);
+  transition: all 1s;
+}
+hr:hover{
+  width: 200px;
 }
 #FP {
   text-align: center;
