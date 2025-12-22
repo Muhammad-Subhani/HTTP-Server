@@ -1,6 +1,6 @@
 .aboutus {
   width: 100vw;
-  height: 560px;
+  height: fit-content;
   box-sizing: border-box;
   background-color: #fff8eb;
 }
@@ -34,7 +34,8 @@ hr:hover{
   margin-top: 8px;
 }
 .inemogi {
-  height: 275px;
+  /* height: 275px; */
+  text-align: center;
   width: 89%;
   display: flex;
   flex-direction: column;
@@ -45,6 +46,7 @@ hr:hover{
   margin-top: 94px;
 }
 .inner {
+  padding-top: 2vh;
   padding-bottom: 26px;
   color: #666161;
   font-family: "Product Sans";

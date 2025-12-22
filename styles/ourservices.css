@@ -13,8 +13,15 @@
   display: grid;
   place-items: center;
   /* flex-wrap: wrap; */
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
+
+@media (min-width: 1000px) {
+  .iconsgrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .ecards {
   width: 432px;
   height: 207px;
