@@ -1,9 +1,10 @@
 .aboutus {
-  max-width: 100%;
+  width: 100vw;
   height: 560px;
   /* overflow-x: hidden; */
   box-sizing: border-box;
-  background-color: #f1f6fc;
+  padding: 15px 0px;
+  background-color: rgba(210, 180, 140, 0.4);
 }
 #ABh {
   text-align: center;
@@ -30,6 +31,7 @@ hr {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 9px;
   margin-top: 8px;
+  margin-bottom: 3vh;
 }
 .inemogi {
   height: 275px;
