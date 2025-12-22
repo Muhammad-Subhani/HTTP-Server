@@ -10,6 +10,7 @@
   /* height: 550px; */
   /* height: fit-content; */
   margin: 31px;
+  padding-bottom: 3vh;
   display: grid;
   place-items: center;
   /* flex-wrap: wrap; */

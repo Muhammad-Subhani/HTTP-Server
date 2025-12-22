@@ -1,8 +1,10 @@
 .aboutus {
   width: 100vw;
+  padding-top: 1vh;
+  padding-bottom: 4vh;
   height: fit-content;
   box-sizing: border-box;
-  background-color: #fff8eb;
+  background-color: rgba(210, 180, 140, 0.5);
 }
 #ABh {
   text-align: center;
@@ -15,9 +17,11 @@ hr {
   margin-top: 9px;
   height: 6px;
   background-color: rgb(44, 5, 5);
+  border: 0px solid rgb(44, 5, 5);
+  border-radius: 30px;
   transition: all 1s;
 }
-hr:hover{
+hr:hover {
   width: 200px;
 }
 #FP {
