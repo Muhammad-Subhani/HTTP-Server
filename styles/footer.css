@@ -19,3 +19,11 @@
   padding: 2vh;
   text-align: center;
 }
+
+.footer-row-2 {
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
