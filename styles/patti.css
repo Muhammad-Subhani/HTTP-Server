@@ -1,0 +1,29 @@
+        .patti{
+    height: 300px;
+    width: 100vw;
+    background-color: #503628;
+    display: flex;
+    gap: 38px;
+
+        }
+        .cd{
+
+    height: 200px;
+    width: 271px;
+    margin-left: 41px;
+    color: white;
+    margin-top: 100px;
+        }
+        #cd1{
+            margin-left: 150px;
+        }
+        .cd-p{
+position: relative;
+    bottom: -13px;
+    font-size: 23px;
+    text-align: center;
+        }
+        .cd-h{
+            font-size: 52px;
+            text-align: center;
+        }
