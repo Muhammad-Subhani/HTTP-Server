@@ -4,6 +4,14 @@
   user-select: none;
 }
 
+@font-face {
+  font-family: "Product Sans";
+  src:
+    url("../Assets/Fonts/Product Sans Regular.ttf") format("truetype"),
+    url("../Assets/Fonts/Product Sans Italic.ttf") format("truetype"),
+    url("../Assets/Fonts/Product Sans Bold.ttf") format("truetype");
+}
+
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
