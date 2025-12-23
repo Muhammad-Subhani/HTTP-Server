@@ -34,7 +34,7 @@
 }
 
 .small-category * {
-  font-size: 0.5vw !important;
+  font-size: 0.8vw !important;
 }
 
 @media (min-width: 600px) {

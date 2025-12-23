@@ -9,7 +9,7 @@ document.getElementById("image").src = img_src;
 document.getElementById("price").innerText = price;
 
 if (category == "elec") {
-  document.getElementById("category").innerText = "Electronics`";
+  document.getElementById("category").innerText = "Electronics";
 } else if (category == "shoewear") {
   document.getElementById("category").innerText = "ShoeWear";
 }
