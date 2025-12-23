@@ -10,7 +10,7 @@
 
 .product-image {
   /* height: 20vw; */
-  width: 50vw;
+  max-width: 30vw;
 }
 
 .product-title {
@@ -45,4 +45,10 @@
   align-content: start;
   gap: 1vw;
   margin-left: 0;
+  margin-top: 0;
+}
+
+.product-price {
+  font-size: 1.2vw;
+  font-family: "Product Sans";
 }
