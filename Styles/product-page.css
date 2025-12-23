@@ -29,12 +29,18 @@
 }
 
 .small-category {
-  margin-left: 0;
+  /* margin-left: 0; */
   margin-bottom: 0 !important;
 }
 
 .small-category * {
   font-size: 0.5vw !important;
+}
+
+@media (min-width: 600px) {
+  .small-category {
+    margin-left: 0 !important;
+  }
 }
 
 .product-info {
@@ -49,6 +55,21 @@
 }
 
 .product-price {
+  display: flex;
+  gap: 1vw;
   font-size: 1.2vw;
   font-family: "Product Sans";
+  transition: all 1s ease;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.product-price:hover {
+  transform: scale(1.1);
+}
+
+#add-to-cart {
+  font-size: 1.3vw;
+  border-radius: 30px;
+  width: 30vw;
 }

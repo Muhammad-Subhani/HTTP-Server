@@ -61,7 +61,7 @@
   color: white;
   border: 0px solid grey;
   border-radius: 30px;
-  padding: 10px 13px;
+  padding: 0.8vw 0.9vw;
   transition: all 0.6s ease;
 }
 .category:hover {
