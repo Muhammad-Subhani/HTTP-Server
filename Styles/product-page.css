@@ -1,0 +1,48 @@
+.pd-t-20 {
+  padding-top: 20vh;
+}
+
+.product-description {
+  display: flex;
+  justify-content: start;
+  align-content: start;
+}
+
+.product-image {
+  /* height: 20vw; */
+  width: 50vw;
+}
+
+.product-title {
+  font-family: "Product Sans";
+  font-weight: 500;
+  font-size: 4rem;
+  text-align: center;
+  transition: all 1s ease;
+  margin-top: 0;
+  margin-bottom: 2vh;
+}
+
+.product-title:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 2px grey;
+}
+
+.small-category {
+  margin-left: 0;
+  margin-bottom: 0 !important;
+}
+
+.small-category * {
+  font-size: 0.5vw !important;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 1vw;
+  margin-left: 0;
+}

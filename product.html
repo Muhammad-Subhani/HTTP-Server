@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ICT Project</title>
+    <!-- CSS stylesheets Import -->
+    <link href="Styles/main.css" rel="stylesheet" />
+    <link href="Styles/product-page.css" rel="stylesheet" />
+    <link href="Styles/header.css" rel="stylesheet" />
+    <link href="Styles/footer.css" rel="stylesheet" />
+    <link href="Styles/carousle.css" rel="stylesheet" />
+    <link href="Styles/searchbar.css" rel="stylesheet" />
+    <link href="Styles/AboutUs.css" rel="stylesheet" />
+    <link href="Styles/animation.css" rel="stylesheet" />
+    <link href="Styles/ourservices.css" rel="stylesheet" />
+    <link href="Styles/products-section.css" rel="stylesheet" />
+    <link href="Styles/patti.css" rel="stylesheet" />
+    <link href="Styles/reviews.css" rel="stylesheet" />
+
+    <!-- JS HTML Components Import -->
+    <script src="Components/header.js" type="text/javascript" defer></script>
+    <script src="Components/searchbar.js" type="text/javascript" defer></script>
+    <script src="Components/animation.js" type="text/javascript" defer></script>
+    <script src="Components/card.js" type="text/javascript" defer></script>
+    <script src="Components/footer.js" type="text/javascript" defer></script>
+    <script src="Components/CSSUPPORT.js" type="text/javascript" defer></script>
+
+    <!-- JS Scripts Import -->
+    <script src="JS/category.js" type="text/javascript" defer></script>
+    <script src="JS/product.js" type="text/javascript" defer></script>
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header-comp></header-comp>
+
+    <!-- Product Description -->
+    <div class="pd-t-20 product-description">
+      <img class="product-image reveal" id="image" alt="IdeaPad" />
+      <div class="product-info">
+        <div class="categories reveal small-category">
+          <button
+            onclick="showCards(event , 'elec')"
+            class="category active-category"
+          >
+            Electronics
+          </button>
+        </div>
+        <div class="product-title reveal" id="title">Lenovo IdeaPad</div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer-comp></footer-comp>
+  </body>
+</html>
