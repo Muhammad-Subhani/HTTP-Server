@@ -25,7 +25,7 @@
 }
 
 .product-section-heading:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
   text-shadow: 2px 2px 2px grey;
 }
 
@@ -62,7 +62,7 @@
   border: 0px solid grey;
   border-radius: 30px;
   padding: 0.8vw 0.9vw;
-  transition: all 0.6s ease;
+  transition: all 1s ease;
 }
 .category:hover {
   transform: scale(1.05);

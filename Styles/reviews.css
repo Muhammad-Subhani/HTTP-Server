@@ -84,7 +84,8 @@
 
 .review-text {
   font-family: "Product Sans, Italic";
-  color: darkslategray;
+  font-size: 2vh;
+  color: black;
   text-align: justify;
   text-justify: inter-word;
   font-style: italic;
