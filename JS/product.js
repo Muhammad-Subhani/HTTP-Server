@@ -64,7 +64,7 @@ function dec() {
     i = 1;
   }
   document.getElementById("fcnt").innerText = i;
-  document.querySelector(".BUY").innerText = "Buy for Rs" + i * newprice;
+  document.querySelector(".BUY").innerText = "Buy for Rs " + i * newprice;
 }
 
 function final() {
