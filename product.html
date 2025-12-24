@@ -46,7 +46,7 @@
     <!-- Product Description -->
     <div class="pd-t-20 product-description">
       <img class="product-image reveal" id="image" alt="Product Image" />
-      <div class="product-info">
+      <div class="product-info" >
         <div class="categories reveal small-category">
           <button
             onclick="showCards(event , 'elec')"
@@ -61,8 +61,27 @@
           <span>Price: </span>
           <div class="price" id="price">Price</div>
         </div>
-        <button id="add-to-cart" class="reveal">Add to Cart</button>
+        <div class="description reveal">
+          <p class="DP"></p>
+        </div>
+        <button id="add-to-cart" class="reveal"onclick="dikhao()">Add to Cart</button>
       </div>
+    </div>
+    <div id="purchase" class="reveal">
+      <div class="INGO">
+        <img  alt="Product image" class="NI2">
+        <div class="naamdham">
+          <p class="inneinfo" id="T2"> Product : </p>
+          <p class="inneinfo" id="P2">Price :</p>
+          <p class="inneinfo" id="C2">Category :</p>
+        </div>
+      </div>
+      <div class="finalcnt">
+        <button class="cntbtn" id="btn1" onclick="dec()">-</button>
+        <p id="fcnt">1</p>
+        <button class="cntbtn" id="btn2"onclick="inc()" >+</button>
+      </div>
+      <button id="add-to-cart" class="BUY reveal" onclick="final()"></button>
     </div>
     <!-- Footer -->
     <footer-comp></footer-comp>

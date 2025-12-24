@@ -1,5 +1,6 @@
 .pd-t-20 {
-  padding-top: 20vh;
+  padding-top: 18vh;
+  position: relative;
 }
 
 .product-description {
@@ -31,6 +32,7 @@
 .small-category {
   /* margin-left: 0; */
   margin-bottom: 0 !important;
+  margin-left: 20px;
 }
 
 .small-category * {
@@ -72,4 +74,90 @@
   font-size: 1.3vw;
   border-radius: 30px;
   width: 30vw;
+}
+.description{
+width: 456px;
+    height: 136px;
+    /* border: 1px solid black; */
+}
+.DP{
+      color: #8e8383;
+    /* text-decoration: wavy; */
+    font-style: italic;
+    text-align: justify;
+}
+#purchase{
+height: 475px;
+    width: 700px;
+    position: absolute;
+    z-index: 2;
+    top: 175px;
+    border: 1px solid black;
+    left: 31%;
+    background-color: white;
+    border-radius: 28px;
+    opacity: 0;
+  }
+    .INGO{
+display: flex;
+
+    width: 654px;
+    height: 262px;
+    margin-top: 16px;
+    }
+    .naamdham{
+    /* border: 1px solid green; */
+    height: 224px;
+    width: 315px;
+    border-left: 3px solid #3f1f0d;
+}
+.NI2{
+
+    height: 227px;
+    width: 181px;
+}
+.inneinfo{
+margin-left: 20px;
+    padding: 16px;
+    font-size: 18px;
+}
+.finalcnt{
+border: 3px solid #3f1f0d;
+    height: 55px;
+    width: 17vw;
+    margin-top: 20px;
+    border-radius: 28px;
+    display: flex;
+    position: relative;
+}
+.cntbtn{
+height: 40px;
+    width: 69px;
+    border-radius: 25px 0 0 25px;
+    background-color: #ddb483d9;
+    font-size: 25px;
+
+}
+.fcnt{
+
+    height: 28px;
+    width: 50px;
+}
+#btn1{
+position: absolute;
+left: 0px;
+margin-left: 7px;
+top: 9%;
+}
+#btn2{
+position: absolute;
+right: 0px;
+border-radius: 0 25px 25px 0;
+top: 9%;
+margin-right: 7px;
+}
+
+.BUY{
+  margin-left: 89px;
+    margin-top: 22px;
 }
