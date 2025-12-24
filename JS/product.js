@@ -10,8 +10,8 @@ console.log(category);
 const cnic = urlParams.get("data");
 console.log(cnic);
 // data-set pass nhi hota to different websites
+const box = document.getElementById("purchase");
 function dikhao() {
-  const box = document.getElementById("purchase");
   box.style.display = "block";
 }
 var newprice = parseInt(price);
@@ -73,7 +73,8 @@ function inc() {
 function dec() {
   i--;
   if (i == 0) {
-    box.style.opacity = "0";
+    box.style.display = "none";
+    i = 1;
   }
   document.getElementById("fcnt").innerText = i;
   document.querySelector(".BUY").innerText = "Buy For :" + i * newprice + "Rs";
