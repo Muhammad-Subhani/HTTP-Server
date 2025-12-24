@@ -14,6 +14,10 @@
   transition: 1s ease;
 }
 
+a {
+  all: unset;
+  cursor: pointer;
+}
 @media (min-width: 1000px) {
   .header {
     flex-direction: row;
@@ -44,7 +48,7 @@
 .header-title:hover {
   /* font-size: 1.6rem; */
   font-weight: 700;
-  transform: translateX(-10px) translateY(-3px) scale(1.1);
+  transform: translateX(-10px) translateY(-3px) scale(1.15);
   color: tan;
   opacity: 85%;
 }
@@ -56,9 +60,9 @@
 }
 
 .header-element {
-  font-family: "Roboto";
+  font-family: "Product Sans";
   font-weight: 430;
-  font-size: 1vw;
+  font-size: 2vh;
   align-self: center;
   color: white;
   padding-left: 2vw;
@@ -69,7 +73,7 @@
 
 .header-element:hover {
   transition: 0.55s ease;
-  transform: translateY(-2px) scale(1.05);
+  transform: translateY(-4px) scale(1.1);
   font-weight: 550;
   color: tan;
   opacity: 85%;

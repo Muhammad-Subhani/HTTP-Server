@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: auto;
   user-select: none;
+  font-family: "Product Sans", "Roboto";
 }
 
 @font-face {
@@ -15,19 +16,18 @@
 @font-face {
   font-family: "BBH Bogle";
   font-display: swap;
-  src:
-    url("../Assets/Fonts/BBHBogle-Regular.ttf") format("truetype"),;
+  src: url("../Assets/Fonts/BBHBogle-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Material Symbols Outlined';
+  font-family: "Material Symbols Outlined";
   font-style: normal;
   font-weight: 400;
-  src: url("../Assets/Fonts/Material.woff2") format('woff2');
+  src: url("../Assets/Fonts/Material.woff2") format("woff2");
 }
 
 .material-symbols-outlined {
-  font-family: 'Material Symbols Outlined';
+  font-family: "Material Symbols Outlined";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -38,13 +38,14 @@
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -webkit-font-feature-settings: 'liga';
+  -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
 
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: "Product Sans";
 }
 
 .flexbox {
@@ -130,4 +131,5 @@ body {
   background-color: white;
   color: black;
   transform: scale(1.03);
+  cursor: pointer;
 }
