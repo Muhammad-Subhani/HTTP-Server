@@ -1,0 +1,49 @@
+.head-img {
+  font-size: 10vh;
+  text-align: center;
+  background-image: url("../Assets/Images/tech-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+
+.page-heading {
+  font-family: "BBH Bogle";
+  font-size: 10vh;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 35%;
+  z-index: 2;
+  text-shadow: 2px 2px 2px grey;
+  transition: all 1s ease;
+}
+
+.page-heading:hover {
+  transform: scale(1.1) !important;
+  text-shadow: 2px 2px 5px tan;
+}
+
+.head-description {
+  font-family: "BBH Bogle";
+  font-size: 4vh;
+  color: white;
+  text-shadow: 2px 2px 2px grey;
+  position: relative;
+  top: 40%;
+  transition: all 1s ease;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.head-description:hover {
+  transform: scale(1.05) !important;
+}
+
+@media (min-width: 760px) {
+  .head-description {
+    color: #0f0f0f;
+    text-shadow: 0px 0px;
+  }
+}
