@@ -39,11 +39,23 @@
 
 .head-description:hover {
   transform: scale(1.05) !important;
+  text-shadow: 2px 2px 2px tan;
 }
 
-@media (min-width: 760px) {
-  .head-description {
-    color: #0f0f0f;
-    text-shadow: 0px 0px;
-  }
+.active-category {
+  background-color: #da794b !important;
+  color: white;
+}
+
+.category:hover {
+  background-color: #da794b !important;
+}
+
+.product:hover {
+  box-shadow: 2px 2px 5px 3px #da794b;
+}
+
+#add-to-cart {
+  background-color: #da794b;
+  border: 2px solid #da794b;
 }

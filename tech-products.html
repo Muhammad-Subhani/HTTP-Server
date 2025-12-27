@@ -53,16 +53,33 @@
     <div class="products-section">
       <h1 class="product-section-heading reveal">Photograhy</h1>
       <div class="categories reveal">
-        <button onclick="showAll(event)" class="category active-category">
+        <button
+          onclick="showAll(event)"
+          class="category tech-category active-category"
+        >
           All
         </button>
-        <button onclick="showCards(event , 'camera')" class="category">
+        <button
+          onclick="showCards(event , 'camera')"
+          class="category tech-category"
+        >
           Camera
         </button>
-        <button onclick="showCards(event, 'tripod')" class="category">
+        <button
+          onclick="showCards(event, 'tripod')"
+          class="category tech-category"
+        >
           Stands
         </button>
       </div>
+      <!-- Photograhy Product Cards -->
+      <card-comp
+        title="Sony Digital Camera"
+        price="950000"
+        image="Assets/Products/Sony_Camera.jpg"
+        id="camera"
+        pehchan="1"
+      ></card-comp>
     </div>
     <!-- Footer -->
     <footer-comp></footer-comp>
