@@ -28,7 +28,6 @@
     <script src="JS/category.js" type="text/javascript" defer></script>
     <script src="JS/CSSUPPORT.js" type="text/javascript" defer></script>
     <script src="JS/animation.js" type="text/javascript" defer></script>
-   
 
     <!-- Fonts -->
     <link
@@ -59,10 +58,9 @@
             <!--   &nbsp; &nbsp; NEW <br /> -->
             <!--   &nbsp; SNEAKERS -->
             <!-- </h1> -->
-             <a href="#Our-Products">
-
-               <button id="fbtn">SHOP NOW</button>
-             </a>
+            <a href="#Our-Products">
+              <button id="fbtn">SHOP NOW</button>
+            </a>
           </div>
           <div class="cdabba" id="db2">
             <h1 id="second">
@@ -72,7 +70,6 @@
               TECH &nbsp;
             </h1>
             <a href="#Our-Products">
-
               <button id="sbtn">SHOP NOW</button>
             </a>
           </div>
@@ -82,7 +79,6 @@
               MUCH MORE
             </h1>
             <a href="#Our-Products">
-
               <button id="tbtn">SHOP NOW</button>
             </a>
           </div>
@@ -94,13 +90,22 @@
       <h1 class="product-section-heading reveal">Our Products</h1>
       <!-- Category Buttons -->
       <div class="categories reveal">
-        <button onclick="showAll(event)" class="category active-category">
+        <button
+          onclick="showAll(event, 'Home')"
+          class="category active-category Home"
+        >
           All
         </button>
-        <button onclick="showCards(event , 'elec')" class="category">
+        <button
+          onclick="showCards(event , 'elec', 'Home')"
+          class="category Home"
+        >
           Electronics
         </button>
-        <button onclick="showCards(event, 'shoewear')" class="category">
+        <button
+          onclick="showCards(event, 'shoewear' , 'Home')"
+          class="category Home"
+        >
           Shoewear
         </button>
       </div>
@@ -111,49 +116,49 @@
           price="950000"
           image="Assets/Products/Sony_Camera.jpg"
           id="elec"
-          pehchan="1"
+          pehchan="Home"
         ></card-comp>
         <card-comp
           title="Nikon PC-E Micro-NIKKOR 85mm f/2.8D"
           price="370000"
           image="Assets/Products/PCE_Micro_NIKKOR_85mm_f2.8D_tilt.png"
           id="lens"
-          pehchan="1"
+          pehchan="Home"
         ></card-comp>
         <card-comp
           title="Infinix InBook"
           price="99900"
           image="Assets/Products/infinix_inbook.webp"
           id="elec"
-          pehchan="2"
+          pehchan="Home"
         ></card-comp>
         <card-comp
           title="Lenovo IdeaPad Slim 3"
           price="105900"
           image="Assets/Products/lenovo_ideapad.webp"
           id="elec"
-          pehchan="3"
+          pehchan="Home"
         ></card-comp>
         <card-comp
           title="Apple MacBook Pro 14 M5"
           price="569900"
           image="Assets/Products/macbook_pro.jpg"
           id="elec"
-          pehchan="4"
+          pehchan="Home"
         ></card-comp>
         <card-comp
           title="Samsung T9 1TB SSD"
           price="44990"
           image="Assets/Products/samsung_t9.webp"
           id="elec"
-          pehchan="5"
+          pehchan="Home"
         ></card-comp>
-                <card-comp
+        <card-comp
           title="Elite Running Joggers"
           price="2690"
           image="Assets/Products/athletic.jpeg"
           id="shoewear"
-          pehchan="7"
+          pehchan="Home"
           class="special"
         ></card-comp>
         <card-comp
@@ -161,39 +166,39 @@
           price="2500"
           image="Assets/Products/green.jpg"
           id="shoewear"
-          pehchan="6"
+          pehchan="Home"
         ></card-comp>
-                <card-comp
+        <card-comp
           title="Champion Sneakers"
           price="3500"
           image="Assets/Products/champion.jpeg"
           id="shoewear"
-          pehchan="7"
-            class="special"
+          pehchan="Home"
+          class="special"
         ></card-comp>
-                <card-comp
+        <card-comp
           title="Blundstone Boots"
           price="4000"
           image="Assets/Products/boot1.jpeg"
           id="shoewear"
-          pehchan="7"
-            class="special"
+          pehchan="Home"
+          class="special"
         ></card-comp>
-                <card-comp
+        <card-comp
           title="Leather Fumes"
           price="3500"
           image="Assets/Products/boot2.avif"
           id="shoewear"
-          pehchan="7"
-            class="special"
+          pehchan="Home"
+          class="special"
         ></card-comp>
-                <card-comp
+        <card-comp
           title="Leather Neivele"
           price="4000"
           image="Assets/Products/boot3.webp"
           id="shoewear"
-          pehchan="7"
-            class="special"
+          pehchan="Home"
+          class="special"
         ></card-comp>
       </div>
     </div>
