@@ -5,16 +5,6 @@ const price = urlParams.get("price");
 category = urlParams.get("category");
 const cnic = urlParams.get("data");
 
-var color;
-var page = urlParams.get("page");
-
-if (page == "tech-products") {
-  color = "#da794b";
-  console.log("Color Set");
-} else {
-  color = "tan";
-}
-
 // data-set pass nhi hota to different websites
 const box = document.getElementById("purchase");
 function dikhao() {
@@ -59,6 +49,14 @@ const descs = {
     "Ndure High Performance Sneakers are designed for active lifestyles, offering comfort and durability for sports and casual wear. They feature cushioned soles, breathable materials, and supportive construction at an affordable price point, making them a popular choice for budget-conscious consumers in Pakistan and neighboring markets.",
   "Elite Running Joggers":
     "Elite Running Joggers are athletic pants designed for comfort during workouts and casual wear, featuring moisture-wicking fabric and a tapered fit. They offer flexibility, breathability, and practical details like zippered pockets, making them ideal for running, gym sessions, or everyday active use.",
+  "Canon EOS 200D II With EF-S 18-55mm f/4-5.6 IS STM Lens":
+    "EOS 200D II is Canon’s lightest DSLR with a Vari-angle Touch Screen LCD. Weighing only a little heavier than a bottle of water*, the camera slides right into your bag for that everyday photography. Packed into its petite body is Canon’s 24.1-megapixels APS-C CMOS sensor, DIGIC 8 processor and a bunch of features that would make snapping your everyday life seamlessly easier.",
+  "Nikon NIKKOR Z MC 50MM F/2.8S":
+    "Achieve a wide range of creative presentations with this highly portable and lightweight lens that is suitable across a range of photography genres. Combining the best of NIKKOR Z and the Z mount’s optical innovation, enjoy a stress-free shooting experience with its focusing performance.",
+  "Nikon PC-E Micro-NIKKOR 85mm f/2.8D":
+    "Well-suited for product and tabletop photography, the PC-E Micro-NIKKOR 85mm f/2.8D from Nikon is a specialized short-telephoto prime offering tilt and shift movements for controlling your focus and perspective. Up to +/- 8.5° of tilt is possible, for focus control; +/- 11.5mm of shift, to adjust perspective and composition; and +/- 90° of rotation is also possible for adjusting the axis of these movements. Further benefitted by the movements, this lens is also a micro optic and provides a 1:2 maximum magnification ratio along with a 1.3' minimum focusing distance for working with close-up subjects.",
+  "Canon EF-S 18-55mm f/3.5-5.6 IS STM Lens":
+    "This EF-s 18-55m f/3.5-5.6 IS STM lens is manufactured by Canon. It is compatible with APS-C format camera. The focal length range is about 18-55mm which is equal to the 29-88mm when used in 35mm format.",
 };
 
 description.innerText = descs[title];
@@ -87,4 +85,13 @@ function final() {
 
 // ColorScheme
 
+var color;
+var page = urlParams.get("page");
+
+if (page == "tech-products") {
+  color = "#da794b";
+  console.log("Color Set");
+} else {
+  color = "tan";
+}
 document.documentElement.style.setProperty("--color", color);
