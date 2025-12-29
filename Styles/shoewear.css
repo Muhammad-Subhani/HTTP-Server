@@ -1,7 +1,7 @@
 .head-img {
   font-size: 10vh;
   text-align: center;
-  background-image: url("../Assets/Images/tech-bg.webp");
+  background-image: url("../Assets/Images/close-up-futuristic-sneakers\ \(1\).jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -49,49 +49,67 @@
 }
 
 .active-category {
-  background-color: var(--color) !important;
+  /* background-color: var(--color) !important; */
+  background-color: rgb(218, 149, 29) !important;
   color: white;
 }
 
 .category:hover {
-  background-color: var(--color) !important;
+  /* background-color: var(--color) !important; */
+  background-color: rgb(218, 149, 29) !important;
 }
 
 .product:hover {
-  box-shadow: 2px 2px 5px 3px var(--color);
+  box-shadow: 2px 2px 5px 3px rgb(218, 149, 29);
 }
 
 #add-to-cart {
-  background-color: var(--color);
-  border: 2px solid var(--color);
+  background-color: rgb(218, 149, 29);
+  border: 2px solid rgb(218, 149, 29);
 }
 
 .header-element:hover {
-  color: var(--color) !important;
+  color: rgb(218, 149, 29) !important;
 }
 
 .header-title:hover {
-  color: var(--color) !important;
+  color: rgb(218, 149, 29)!important;
 }
 
 .footer-line {
-  background-color: var(--color) !important ;
+  background-color: rgb(218, 149, 29) !important ;
 }
 
 .footer-line:hover {
-  color: var(--color) !important;
+  color: rgb(218, 149, 29) !important;
 }
 
 .footer-title:hover {
-  color: var(--color) !important;
+  color: rgb(218, 149, 29) !important;
 }
 
 .copyright:hover {
-  border: 2px solid var(--color) !important;
+  border: 2px solid rgb(218, 149, 29) !important;
 }
 .github-logo:hover {
-  color: var(--color) !important;
+  color: rgb(218, 149, 29) !important;
 }
 .footer-sec-head {
-  color: var(--color) !important;
+  color: rgb(218, 149, 29) !important;
+}
+.special{
+width: 40vw;
+height: 400px;
+}
+#joggers{
+  width: 40vw;
+}
+/* .pro:hover{
+  box-shadow: 1.5px 1.5px 5px 2px goldenrod;
+} */
+ .product:hover{
+    box-shadow: 1.5px 1.5px 5px 2px rgb(218, 149, 29);
+ }
+#Formal{
+width: 40vw;  
 }

@@ -43,13 +43,13 @@
     <!-- Navigation Header -->
     <header-comp></header-comp>
     <div class="head-img">
-      <h3 class="page-heading reveal">Type your text</h3>
-      <p class="head-description reveal">Anything</p>
+      <h3 class="page-heading reveal"> Shoewear</h3>
+      <p class="head-description reveal">WE Provide You Top Notch Quality Shoeware</p>
     </div>
 
     <!-- Photograhy Section -->
     <div class="products-section">
-      <h1 class="product-section-heading reveal">Anything</h1>
+      <h1 class="product-section-heading reveal">Available Stock</h1>
       <div class="categories reveal">
         <button
           onclick="showAll(event)"
@@ -58,20 +58,68 @@
           All
         </button>
         <button
-          onclick="showCards(event , 'camera')"
+          onclick="showCards(event , 'joggers')"
           class="category tech-category"
         >
-          Camera
+          Joggers
         </button>
         <button
-          onclick="showCards(event, 'lens')"
+          onclick="showCards(event, 'Formal')"
           class="category tech-category"
         >
-          Lenses
+          Formal
         </button>
       </div>
       <!-- Photograhy Product Cards -->
-      <div class="products reveal"></div>
+      <div class="products reveal">
+                <card-comp
+          title="Elite Running Joggers"
+          price="2690"
+          image="Assets/Products/athletic.jpeg"
+          id="joggers"
+          pehchan="7"
+          class="special"
+        ></card-comp>
+        <card-comp
+          title="Ndure High Performance Sneakers"
+          price="2500"
+          image="Assets/Products/green.jpg"
+          id="joggers"
+          pehchan="6"
+        ></card-comp>
+                <card-comp
+          title="Champion Sneakers"
+          price="3500"
+          image="Assets/Products/champion.jpeg"
+          id="joggers"
+          pehchan="7"
+            class="special"
+        ></card-comp>
+                <card-comp
+          title="Blundstone Boots"
+          price="4000"
+          image="Assets/Products/boot1.jpeg"
+          id="Formal"
+          pehchan="7"
+            class="special"
+        ></card-comp>
+                <card-comp
+          title="Leather Fumes"
+          price="3500"
+          image="Assets/Products/boot2.avif"
+          id="Formal"
+          pehchan="7"
+            class="special"
+        ></card-comp>
+                <card-comp
+          title="Leather Neivele"
+          price="4000"
+          image="Assets/Products/boot3.webp"
+          id="Formal"
+          pehchan="7"
+            class="special"
+        ></card-comp>
+      </div>
     </div>
     <!-- Footer -->
     <footer-comp></footer-comp>
