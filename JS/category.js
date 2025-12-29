@@ -1,8 +1,10 @@
-function showCards(event, category) {
+function showCards(event, category, section) {
   cards = document.getElementsByClassName("product");
 
   for (i = 0; i < cards.length; i++) {
-    cards[i].style.display = "none";
+    if (cards[i].getAttribute("pehchan") == section) {
+      cards[i].style.display = "none";
+    }
   }
 
   for (i = 0; i < cards.length; i++) {
@@ -12,8 +14,9 @@ function showCards(event, category) {
     }
   }
 
-  activeButtons = document.getElementsByClassName("active-category");
+  activeButtons = document.getElementsByClassName(section);
   for (i = 0; i < activeButtons.length; i++) {
+    console.log(i);
     activeButtons[i].className = activeButtons[i].className.replaceAll(
       " active-category",
       "",
@@ -23,14 +26,14 @@ function showCards(event, category) {
   event.currentTarget.className += " active-category";
 }
 
-function showAll(event) {
+function showAll(event, section) {
   cards = document.getElementsByClassName("product");
   for (i = 0; i < cards.length; i++) {
     cards[i].style.display = "flex";
   }
 
   // Changing the active style from the previous button to All button
-  activeButtons = document.getElementsByClassName("active-category");
+  activeButtons = document.getElementsByClassName(section);
   for (i = 0; i < activeButtons.length; i++) {
     activeButtons[i].className = activeButtons[i].className.replaceAll(
       " active-category",

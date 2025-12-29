@@ -54,20 +54,20 @@
       <h1 class="product-section-heading reveal">Photograhy</h1>
       <div class="categories reveal">
         <button
-          onclick="showAll(event)"
-          class="category tech-category active-category"
+          onclick="showAll(event, 'Photograhy')"
+          class="category Photograhy active-category"
         >
           All
         </button>
         <button
-          onclick="showCards(event , 'camera')"
-          class="category tech-category"
+          onclick="showCards(event , 'camera', 'Photograhy')"
+          class="category Photograhy"
         >
           Camera
         </button>
         <button
-          onclick="showCards(event, 'lens')"
-          class="category tech-category"
+          onclick="showCards(event, 'lens', 'Photograhy')"
+          class="category Photograhy"
         >
           Lenses
         </button>
@@ -79,7 +79,7 @@
           price="174000"
           image="Assets/Products/0ViHcanon-eos-200d-ii-with-ef-s-18-55mm.webp"
           id="camera"
-          pehchan="1"
+          pehchan="Photograhy"
           page="tech-products"
         ></card-comp>
         <card-comp
@@ -88,7 +88,7 @@
           image="Assets/Products/Sony_Camera.jpg"
           id="camera"
           page="tech-products"
-          pehchan="1"
+          pehchan="Photograhy"
         ></card-comp>
         <card-comp
           title="Canon EOS M3 Mirrorless Digital Camera with 18-55mm Lens"
@@ -96,7 +96,7 @@
           image="Assets/Products/Canon-EOS-M3-Mirrorless.jpg"
           id="camera"
           page="tech-products"
-          pehchan="1"
+          pehchan="Photograhy"
         ></card-comp>
         <card-comp
           title="Nikon NIKKOR Z MC 50MM F/2.8S"
@@ -104,7 +104,7 @@
           image="Assets/Products/nikkon-lens-50mm.png"
           id="lens"
           page="tech-products"
-          pehchan="1"
+          pehchan="Photograhy"
         ></card-comp>
         <card-comp
           title="Nikon PC-E Micro-NIKKOR 85mm f/2.8D"
@@ -112,7 +112,7 @@
           image="Assets/Products/PCE_Micro_NIKKOR_85mm_f2.8D_tilt.png"
           id="lens"
           page="tech-products"
-          pehchan="1"
+          pehchan="Photograhy"
         ></card-comp>
         <card-comp
           title="Canon EF-S 18-55mm f/3.5-5.6 IS STM Lens"
@@ -120,7 +120,91 @@
           image="Assets/Products/sMzHCanon-EF-S4.jpg"
           id="lens"
           page="tech-products"
-          pehchan="1"
+          pehchan="Photograhy"
+        ></card-comp>
+      </div>
+    </div>
+
+    <!-- Computers Section -->
+    <div class="products-section">
+      <h1 class="product-section-heading reveal">Computing Devices</h1>
+      <div class="categories reveal">
+        <button
+          onclick="showAll(event , 'Computing')"
+          class="category Computing active-category"
+        >
+          All
+        </button>
+        <button
+          onclick="showCards(event , 'laptop', 'Computing')"
+          class="category Computing"
+        >
+          Laptops
+        </button>
+        <button
+          onclick="showCards(event, 'storage', 'Computing')"
+          class="category Computing"
+        >
+          Storage
+        </button>
+      </div>
+      <!-- Photograhy Product Cards -->
+      <div class="products reveal">
+        <card-comp
+          title="Infinix InBook"
+          price="99900"
+          image="Assets/Products/infinix_inbook.webp"
+          id="laptop"
+          page="tech-products"
+          pehchan="Computing"
+        ></card-comp>
+        <card-comp
+          title="Lenovo IdeaPad Slim 3"
+          price="105900"
+          image="Assets/Products/lenovo_ideapad.webp"
+          id="laptop"
+          page="tech-products"
+          pehchan="Computing"
+        ></card-comp>
+        <card-comp
+          title="Apple MacBook Pro 14 M5"
+          price="569900"
+          image="Assets/Products/macbook_pro.jpg"
+          id="laptop"
+          page="tech-products"
+          pehchan="Computing"
+        ></card-comp>
+        <card-comp
+          title="Samsung T9 1TB SSD"
+          price="44990"
+          image="Assets/Products/samsung_t9.webp"
+          id="storage"
+          page="tech-products"
+          pehchan="Computing"
+        ></card-comp>
+        <card-comp
+          title="SanDisk Ultra Dual Drive Go USB Type-C™ - 32GB"
+          price="3590"
+          image="Assets/Products/ultra-dual-drive-go-usb-3-1-type-c-hero-v2.png.wdthumb.319.319.webp"
+          id="storage"
+          page="tech-products"
+          pehchan="Computing"
+        ></card-comp>
+        <card-comp
+          title="SanDisk Ultra® USB Type-C™ Flash Drive - 32GB"
+          price="3090"
+          image="Assets/Products/ultra-usb-3-1-type-c-closed-left.png.wdthumb.1280.1280.webp"
+          id="storage"
+          page="tech-products"
+          pehchan="Computing"
+        ></card-comp>
+        <card-comp
+          title="SanDisk Extreme PRO SD UHS-II Card (V90) - 64GB"
+          price="3090"
+          image="Assets/Products/extreme-pro-uhs-ii-v90-sd-64gb-right.png.wdthumb.1280.1280.webp"
+          id="storage"
+          page="tech-products"
+          pehchan="Computing"
         ></card-comp>
       </div>
     </div>
