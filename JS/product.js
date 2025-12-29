@@ -59,6 +59,14 @@ const descs = {
     "Well-suited for product and tabletop photography, the PC-E Micro-NIKKOR 85mm f/2.8D from Nikon is a specialized short-telephoto prime offering tilt and shift movements for controlling your focus and perspective. Up to +/- 8.5° of tilt is possible, for focus control; +/- 11.5mm of shift, to adjust perspective and composition; and +/- 90° of rotation is also possible for adjusting the axis of these movements. Further benefitted by the movements, this lens is also a micro optic and provides a 1:2 maximum magnification ratio along with a 1.3' minimum focusing distance for working with close-up subjects.",
   "Canon EF-S 18-55mm f/3.5-5.6 IS STM Lens":
     "This EF-s 18-55m f/3.5-5.6 IS STM lens is manufactured by Canon. It is compatible with APS-C format camera. The focal length range is about 18-55mm which is equal to the 29-88mm when used in 35mm format.",
+    "Champion Sneakers" :
+    "Make a statement with these distinctive Champion sneakers featuring a unique black and white geometric design. The chunky silhouette and premium construction provide all-day comfort and durability. Perfect for both athletic activities and casual streetwear, these sneakers blend retro-inspired styling with contemporary performance features.",
+    "Blundstone Boots" :
+    "Sophisticated black leather ankle boots that exude elegance and refinement. With a sleek silhouette and polished finish, these boots are perfect for professional settings or evening occasions. The quality leather construction ensures durability, while the comfortable fit makes them suitable for all-day wear.",
+    "Leather Fumes" :
+    "Sophisticated black leather ankle boots that exude elegance and refinement. With a sleek silhouette and polished finish, these boots are perfect for professional settings or evening occasions. The quality leather construction ensures durability, while the comfortable fit makes them suitable for all-day wear.",
+    "Leather Neivele" :
+    "Distinguished brown leather boots featuring a unique crocodile-embossed texture that adds a touch of luxury to any outfit. The lace-up design and ankle-height cut provide both style and functionality. These boots are crafted for the modern gentleman who appreciates fine details and premium materials."
 };
 
 description.innerText = descs[title];
