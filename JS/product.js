@@ -5,6 +5,16 @@ const price = urlParams.get("price");
 category = urlParams.get("category");
 const cnic = urlParams.get("data");
 
+var color;
+var page = urlParams.get("page");
+
+if (page == "tech-products") {
+  color = "#da794b";
+  console.log("Color Set");
+} else {
+  color = "tan";
+}
+
 // data-set pass nhi hota to different websites
 const box = document.getElementById("purchase");
 function dikhao() {
@@ -71,5 +81,10 @@ function dec() {
 
 function final() {
   alert("You have Succesfully Purchased");
-  box.style.opacity = "0";
+  box.style.display = "none";
+  i = 1;
 }
+
+// ColorScheme
+
+document.documentElement.style.setProperty("--color", color);

@@ -5,7 +5,7 @@ class Card extends HTMLElement {
   connectedCallback() {
     this.className = "card product";
     this.innerHTML = `
-        <a  id=${this.getAttribute("id")} data-cnic=${this.getAttribute("pehchan")} href="./product.html?title=${this.getAttribute("title")}&image=${this.getAttribute("image")}&price=${this.getAttribute("price")}&category=${this.getAttribute("id")}&data=${this.getAttribute("pehchan")}">
+        <a  id=${this.getAttribute("id")} data-cnic=${this.getAttribute("pehchan")} href="./product.html?title=${this.getAttribute("title")}&image=${this.getAttribute("image")}&price=${this.getAttribute("price")}&category=${this.getAttribute("id")}&page=${this.getAttribute("page")}&data=${this.getAttribute("pehchan")}">
           <img
             class="product-image"
             src=${this.getAttribute("image")}
