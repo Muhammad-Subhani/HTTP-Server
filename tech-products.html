@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ICT Project</title>
+    <!-- CSS stylesheets Import -->
+    <link href="Styles/main.css" rel="stylesheet" />
+    <link href="Styles/tech-products.css" rel="stylesheet" />
+    <link href="Styles/header.css" rel="stylesheet" />
+    <link href="Styles/footer.css" rel="stylesheet" />
+    <link href="Styles/carousle.css" rel="stylesheet" />
+    <link href="Styles/searchbar.css" rel="stylesheet" />
+    <link href="Styles/AboutUs.css" rel="stylesheet" />
+    <link href="Styles/animation.css" rel="stylesheet" />
+    <link href="Styles/ourservices.css" rel="stylesheet" />
+    <link href="Styles/products-section.css" rel="stylesheet" />
+    <link href="Styles/patti.css" rel="stylesheet" />
+    <link href="Styles/reviews.css" rel="stylesheet" />
+
+    <!-- JS HTML Components Import -->
+    <script src="Components/header.js" type="text/javascript" defer></script>
+    <script src="Components/searchbar.js" type="text/javascript" defer></script>
+    <script src="Components/animation.js" type="text/javascript" defer></script>
+    <script src="Components/card.js" type="text/javascript" defer></script>
+    <script src="Components/footer.js" type="text/javascript" defer></script>
+    <script src="Components/CSSUPPORT.js" type="text/javascript" defer></script>
+
+    <!-- JS Scripts Import -->
+    <script src="JS/carousle.js" type="text/javascript" defer></script>
+    <script src="JS/category.js" type="text/javascript" defer></script>
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header-comp></header-comp>
+    <div class="head-img">
+      <h3 class="page-heading reveal">Tech Products</h3>
+      <p class="head-description reveal">
+        We provide you with the latest and best tech gadgets and equipments.
+      </p>
+    </div>
+
+    <!-- Photograhy Section -->
+    <div class="products-section">
+      <h1 class="product-section-heading reveal">Photograhy</h1>
+      <div class="categories reveal">
+        <button
+          onclick="showAll(event)"
+          class="category tech-category active-category"
+        >
+          All
+        </button>
+        <button
+          onclick="showCards(event , 'camera')"
+          class="category tech-category"
+        >
+          Camera
+        </button>
+        <button
+          onclick="showCards(event, 'lens')"
+          class="category tech-category"
+        >
+          Lenses
+        </button>
+      </div>
+      <!-- Photograhy Product Cards -->
+      <div class="products reveal">
+        <card-comp
+          title="Canon EOS 200D II With EF-S 18-55mm f/4-5.6 IS STM Lens"
+          price="174000"
+          image="Assets/Products/0ViHcanon-eos-200d-ii-with-ef-s-18-55mm.webp"
+          id="camera"
+          pehchan="1"
+          page="tech-products"
+        ></card-comp>
+        <card-comp
+          title="Sony A7 Full-Frame Mirrorless Digital Camera"
+          price="950000"
+          image="Assets/Products/Sony_Camera.jpg"
+          id="camera"
+          page="tech-products"
+          pehchan="1"
+        ></card-comp>
+        <card-comp
+          title="Canon EOS M3 Mirrorless Digital Camera with 18-55mm Lens"
+          price="61500"
+          image="Assets/Products/Canon-EOS-M3-Mirrorless.jpg"
+          id="camera"
+          page="tech-products"
+          pehchan="1"
+        ></card-comp>
+        <card-comp
+          title="Nikon NIKKOR Z MC 50MM F/2.8S"
+          price="170000"
+          image="Assets/Products/nikkon-lens-50mm.png"
+          id="lens"
+          page="tech-products"
+          pehchan="1"
+        ></card-comp>
+        <card-comp
+          title="Nikon PC-E Micro-NIKKOR 85mm f/2.8D"
+          price="370000"
+          image="Assets/Products/PCE_Micro_NIKKOR_85mm_f2.8D_tilt.png"
+          id="lens"
+          page="tech-products"
+          pehchan="1"
+        ></card-comp>
+        <card-comp
+          title="Canon EF-S 18-55mm f/3.5-5.6 IS STM Lens"
+          price="12000"
+          image="Assets/Products/sMzHCanon-EF-S4.jpg"
+          id="lens"
+          page="tech-products"
+          pehchan="1"
+        ></card-comp>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer-comp></footer-comp>
+  </body>
+</html>

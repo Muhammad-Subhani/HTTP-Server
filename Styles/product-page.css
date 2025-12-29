@@ -1,5 +1,6 @@
-.pd-t-20 {
+.pd-tb-20 {
   padding-top: 18vh;
+  padding-bottom: 13vh;
   position: relative;
 }
 
@@ -8,6 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  max-width: 75vw;
 }
 
 @media (min-width: 760px) {
@@ -114,7 +116,7 @@
 
 #purchase:hover {
   transform: scale(1.05);
-  box-shadow: 2px 2px 2px 2px tan;
+  box-shadow: 2px 2px 2px 2px var(--primary-color);
 }
 .INGO {
   display: flex;
@@ -151,7 +153,7 @@
   height: 40px;
   width: 69px;
   border-radius: 25px 0 0 25px;
-  background-color: #ddb483d9;
+  background-color: var(--color);
   font-size: 25px;
 }
 .fcnt {
@@ -176,4 +178,57 @@
 .BUY {
   margin-left: 89px;
   margin-top: 22px;
+}
+
+.head-description:hover {
+  transform: scale(1.05) !important;
+  text-shadow: 2px 2px 2px tan;
+}
+
+.active-category {
+  background-color: var(--color) !important;
+  color: white;
+}
+
+.category:hover {
+  background-color: var(--color) !important;
+}
+
+.product:hover {
+  box-shadow: 2px 2px 5px 3px var(--color);
+}
+
+#add-to-cart {
+  background-color: var(--color);
+  border: 2px solid var(--color);
+}
+
+.header-element:hover {
+  color: var(--color) !important;
+}
+
+.header-title:hover {
+  color: var(--color) !important;
+}
+
+.footer-line {
+  background-color: var(--color) !important ;
+}
+
+.footer-line:hover {
+  color: var(--color) !important;
+}
+
+.footer-title:hover {
+  color: var(--color) !important;
+}
+
+.copyright:hover {
+  border: 2px solid var(--color) !important;
+}
+.github-logo:hover {
+  color: var(--color) !important;
+}
+.footer-sec-head {
+  color: var(--color) !important;
 }

@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: auto;
   user-select: none;
-  font-family: "Product Sans", "Roboto";
+  font-family: "Product Sans";
 }
 
 @font-face {
@@ -38,8 +38,8 @@
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -webkit-font-feature-settings: "liga";
-  -webkit-font-smoothing: antialiased;
+  --webkit-font-feature-settings: "liga";
+  --webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -68,6 +68,14 @@ body {
   align-items: center;
   justify-items: center;
   animation: fadeEffect 1s;
+}
+
+.card a {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-items: stretch;
+  height: 100%;
 }
 
 @media (min-width: 1000px) {
