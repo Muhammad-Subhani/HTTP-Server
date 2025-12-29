@@ -7,8 +7,10 @@ const cnic = urlParams.get("data");
 
 // data-set pass nhi hota to different websites
 const box = document.getElementById("purchase");
-function dikhao() {
+
+function show() {
   box.style.display = "flex";
+  console.log("shown");
 }
 
 if (category == "elec") {
