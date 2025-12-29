@@ -19,7 +19,14 @@ if (category == "elec") {
 } else if (category == "shoewear") {
   category = "ShoeWear";
   document.getElementById("category").innerText = category;
+} else if (category == "laptop") {
+  category = "Laptop";
+  document.getElementById("category").innerText = category;
+} else if (category == "storage") {
+  category = "Storage";
+  document.getElementById("category").innerText = category;
 }
+
 var newprice = parseInt(price);
 
 document.getElementById("title").innerText = title;
@@ -35,6 +42,12 @@ const description = document.querySelector(".DP");
 
 // Mapped the descriptions of the products against their titles so that they can be accessed later
 const descs = {
+  "SanDisk Extreme PRO SD UHS-II Card (V90) - 64GB":
+    "Capture once-in-a-lifetime moments with the SanDisk Extreme PRO SD UHS-II card. Its pro-level performance enables cinema-quality 8K3 video recording, brilliant high-res image capture, and maximum post-production workflow efficiency. These SDXC™ memory cards deliver our fastest speeds possible with SD UHS-II cards: write speeds up to 300MB/s, sustained minimum video write speeds of 90MB/s.",
+  "SanDisk Ultra Dual Drive Go USB Type-C™ - 32GB":
+    "Looking for storage that works across your USB Type-C™ and Type-A devices? The SanDisk Ultra Dual Drive Go USB Type-C is the 2-in-1 flash drive that lets you easily move files between your USB Type-C smartphone, tablets, and Mac and USB Type-A computers.2 Now you can take even more photos and access them across your devices.",
+  "SanDisk Ultra® USB Type-C™ Flash Drive - 32GB":
+    "The SanDisk Ultra® USB Type-C™ Flash Drive plugs right in to your USB Type-C™ computers, smartphones and tablets2 so you can quickly and easily store and transfer photos, videos and other files between devices.",
   "Lenovo IdeaPad Slim 3":
     "The Lenovo IdeaPad Slim 3 is an affordable, lightweight laptop ideal for everyday tasks like web browsing and document work. It offers various processor options (AMD Ryzen or Intel), decent battery life, and a 15.6-inch display, making it a practical choice for students and casual users on a budget.",
   "Sony A7 Full-Frame Mirrorless Digital Camera":
