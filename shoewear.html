@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ICT Project</title>
+    <!-- CSS stylesheets Import -->
+    <link href="Styles/main.css" rel="stylesheet" />
+    <link href="Styles/shoewear.css" rel="stylesheet" />
+    <link href="Styles/header.css" rel="stylesheet" />
+    <link href="Styles/footer.css" rel="stylesheet" />
+    <link href="Styles/carousle.css" rel="stylesheet" />
+    <link href="Styles/searchbar.css" rel="stylesheet" />
+    <link href="Styles/AboutUs.css" rel="stylesheet" />
+    <link href="Styles/animation.css" rel="stylesheet" />
+    <link href="Styles/ourservices.css" rel="stylesheet" />
+    <link href="Styles/products-section.css" rel="stylesheet" />
+    <link href="Styles/patti.css" rel="stylesheet" />
+    <link href="Styles/reviews.css" rel="stylesheet" />
+
+    <!-- JS HTML Components Import -->
+    <script src="Components/header.js" type="text/javascript" defer></script>
+    <script src="Components/searchbar.js" type="text/javascript" defer></script>
+    <script src="Components/card.js" type="text/javascript" defer></script>
+    <script src="Components/footer.js" type="text/javascript" defer></script>
+
+    <!-- JS Scripts Import -->
+    <script src="JS/carousle.js" type="text/javascript" defer></script>
+    <script src="JS/category.js" type="text/javascript" defer></script>
+    <script src="JS/CSSUPPORT.js" type="text/javascript" defer></script>
+    <script src="JS/animation.js" type="text/javascript" defer></script>
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header-comp></header-comp>
+    <div class="head-img">
+      <h3 class="page-heading reveal">Type your text</h3>
+      <p class="head-description reveal">Anything</p>
+    </div>
+
+    <!-- Photograhy Section -->
+    <div class="products-section">
+      <h1 class="product-section-heading reveal">Anything</h1>
+      <div class="categories reveal">
+        <button
+          onclick="showAll(event)"
+          class="category tech-category active-category"
+        >
+          All
+        </button>
+        <button
+          onclick="showCards(event , 'camera')"
+          class="category tech-category"
+        >
+          Camera
+        </button>
+        <button
+          onclick="showCards(event, 'lens')"
+          class="category tech-category"
+        >
+          Lenses
+        </button>
+      </div>
+      <!-- Photograhy Product Cards -->
+      <div class="products reveal"></div>
+    </div>
+    <!-- Footer -->
+    <footer-comp></footer-comp>
+  </body>
+</html>

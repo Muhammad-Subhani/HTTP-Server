@@ -18,8 +18,8 @@ class Header extends HTMLElement {
         <div class="header-title"><a href="./home.html">EFLYER</a></div>
         <div class="header-pages">
           <div class="header-element"><a href="./home.html">Home</a></div>
-          <div class="header-element"><a href="./products.html">Products</a></div>
           <div class="header-element"><a href="./tech-products.html">Tech Gadgets</a></div>
+          <div class="header-element"><a href="./shoewear.html">ShoeWear</a></div>
           <div class="header-element" onclick="scrollToAbout()">About</div>
         </div>
     </header>
