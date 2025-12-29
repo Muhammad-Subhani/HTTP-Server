@@ -1,7 +1,10 @@
+:root {
+  --color: #da794b;
+}
 .head-img {
   font-size: 10vh;
   text-align: center;
-  background-image: url("../Assets/Images/tech-bg.jpg");
+  background-image: url("../Assets/Images/tech-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -43,19 +46,49 @@
 }
 
 .active-category {
-  background-color: #da794b !important;
+  background-color: var(--color) !important;
   color: white;
 }
 
 .category:hover {
-  background-color: #da794b !important;
+  background-color: var(--color) !important;
 }
 
 .product:hover {
-  box-shadow: 2px 2px 5px 3px #da794b;
+  box-shadow: 2px 2px 5px 3px var(--color);
 }
 
 #add-to-cart {
-  background-color: #da794b;
-  border: 2px solid #da794b;
+  background-color: var(--color);
+  border: 2px solid var(--color);
+}
+
+.header-element:hover {
+  color: var(--color) !important;
+}
+
+.header-title:hover {
+  color: var(--color) !important;
+}
+
+.footer-line {
+  background-color: var(--color) !important ;
+}
+
+.footer-line:hover {
+  color: var(--color) !important;
+}
+
+.footer-title:hover {
+  color: var(--color) !important;
+}
+
+.copyright:hover {
+  border: 2px solid var(--color) !important;
+}
+.github-logo:hover {
+  color: var(--color) !important;
+}
+.footer-sec-head {
+  color: var(--color) !important;
 }

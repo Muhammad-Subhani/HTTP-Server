@@ -35,8 +35,10 @@ const description = document.querySelector(".DP");
 const descs = {
   "Lenovo IdeaPad Slim 3":
     "The Lenovo IdeaPad Slim 3 is an affordable, lightweight laptop ideal for everyday tasks like web browsing and document work. It offers various processor options (AMD Ryzen or Intel), decent battery life, and a 15.6-inch display, making it a practical choice for students and casual users on a budget.",
-  "Sony Digital Camera":
+  "Sony A7 Full-Frame Mirrorless Digital Camera":
     "The Sony Digital Camera line includes a wide range of models from compact point-and-shoot cameras to advanced mirrorless systems. Known for excellent image quality, fast autofocus, and innovative features like in-body stabilization, Sony cameras are popular among both enthusiasts and professionals for photography and video recording.",
+  "Canon EOS M3 Mirrorless Digital Camera with 18-55mm Lens":
+    "Capture high-resolution images and full HD 1080p video with the compact black EOS M3 Mirrorless Digital Camera with 18-55mm Lens. The M3 features a 24.2MP APS-C CMOS sensor and a DIGIC 6 Image Processor to with an ISO sensitivity range of 100 to 12800, expandable up to 25600. An intuitive 3.0 1,040k-dot touchscreen LCD allows you to focus and shoot an image with a single tap on the screen. The touchscreen has a ClearView II coating and tilts up 180° and down 45°, making it easy to compose and shoot selfies as well as low-angle shots.",
   "Infinix InBook":
     "The Infinix InBook is a budget-friendly laptop offering solid performance for everyday tasks with Intel processors, up to 16GB RAM, and SSD storage. It features a sleek metal design, Full HD display, and long battery life, targeting students and professionals seeking an affordable yet capable notebook.",
   "Apple MacBook Pro 14 M5":

@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  max-width: 75vw;
 }
 
 @media (min-width: 760px) {
