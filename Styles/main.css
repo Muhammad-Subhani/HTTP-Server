@@ -70,6 +70,14 @@ body {
   animation: fadeEffect 1s;
 }
 
+.card a {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-items: stretch;
+  height: 100%;
+}
+
 @media (min-width: 1000px) {
   .card {
     max-width: 20vw;
