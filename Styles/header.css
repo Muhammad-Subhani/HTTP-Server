@@ -18,7 +18,7 @@ a {
   all: unset;
   cursor: pointer;
 }
-@media (min-width: 1000px) {
+@media (min-width: 1260px) {
   .header {
     flex-direction: row;
   }
@@ -43,7 +43,6 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
   color: white;
-  padding-left: 0;
   padding-bottom: 2vh;
   transition: 0.55s ease-in-out;
 }
