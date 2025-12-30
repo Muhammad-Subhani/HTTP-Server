@@ -97,12 +97,11 @@
   text-align: justify;
 }
 #purchase {
-  /* height: 50vh; */
-  /* width: 50vw; */
+  height: 50vh;
+  width: fit-content;
   position: fixed;
-  top: 30%;
-  left: 33%;
-  /* transform: translate(-50%, -50%); */
+  top: 10vw;
+  left: 30vw;
   z-index: 1;
   text-align: center;
   margin: auto;
@@ -125,9 +124,9 @@
 }
 .INGO {
   display: flex;
-
-  width: 654px;
-  height: 262px;
+  gap: 10vw;
+  /* width: 654px; */
+  /* height: 262px; */
   margin-top: 16px;
 }
 .naamdham {
@@ -143,7 +142,7 @@
 .inneinfo {
   margin-left: 20px;
   padding: 16px;
-  font-size: 18px;
+  font-size: 1.5vh;
 }
 .finalcnt {
   border: 3px solid #3f1f0d;
