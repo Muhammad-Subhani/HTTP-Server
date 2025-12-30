@@ -7,21 +7,22 @@ class Footer extends HTMLElement {
     <footer class="footer">
       <div class="footer-row-1">
         <div class="footer-row">
-          <h2 class="footer-title">EFLYER</h2>
+          <h2 class="footer-title">CosmoBuy</h2>
           <div class="footer-pages">
             <h3 class="footer-sec-head">Pages</h3>
             <div class="footer-section">
-              <span>Home</span>
-              <span>Products</span>
-              <span>About</span>
+              <a href='./home.html'>Home</a>
+              <a href='./tech-products.html'>Tech Gadgets</a>
+              <a href='./shoewear.html'>ShoeWear</a>
+              <span onclick="scrollToAbout()">About</span>
             </div>
           </div>
           <div class="footer-pages">
             <h3 class="footer-sec-head">Developed By</h3>
             <div class="footer-section">
-              <span>Muhammad Subhani</span>
-              <span>Abdur Rehman Imran</span>
-              <span>Dawood Saleh</span>
+              <span>Muhammad Subhani (BCSF25M005)</span>
+              <span>Abdur Rehman Imran (BCSF25M013)</span>
+              <span>Dawood Saleh (BCSF25M038)</span>
             </div>
           </div>
         </div>
@@ -50,7 +51,7 @@ class Footer extends HTMLElement {
           </svg>
         </div>
         <div class="copyright">
-          Copyright © 2025 EFLYER Inc. All rights reserved
+          Copyright © 2025 CosmoBuy Inc. All rights reserved
         </div>
       </div>
     </footer>

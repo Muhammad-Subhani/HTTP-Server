@@ -14,7 +14,7 @@ class SEARCH extends HTMLElement {
         <i class="fa-solid fa-magnifying-glass"></i>
         </a>
         </div>
-        <button id="categories">Categories</button>
+        <button id="categories" onclick="scrollToProducts()">Categories</button>
       </div>
       `;
   }
