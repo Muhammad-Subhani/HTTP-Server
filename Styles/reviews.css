@@ -42,7 +42,7 @@
 
 .CN:hover {
   transform: scale(1.05) translateY(-7px) !important;
-  box-shadow: 2px 2px 5px 3px tan;
+  box-shadow: 2px 2px 5px 3px #e59e4d;
 }
 
 .group {

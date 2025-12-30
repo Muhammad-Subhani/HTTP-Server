@@ -25,7 +25,7 @@
 
 .page-heading:hover {
   transform: scale(1.1) !important;
-  text-shadow: 2px 2px 5px tan;
+  text-shadow: 2px 2px 5px #e59e4d;
 }
 
 .head-description {
@@ -42,7 +42,7 @@
 
 .head-description:hover {
   transform: scale(1.05) !important;
-  text-shadow: 2px 2px 2px tan;
+  text-shadow: 2px 2px 2px #e59e4d;
 }
 
 .active-category {

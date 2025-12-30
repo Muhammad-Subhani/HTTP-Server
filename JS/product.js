@@ -118,6 +118,6 @@ if (page == "tech-products") {
   color = "#da951d";
   console.log("Color Set");
 } else {
-  color = "tan";
+  color = "#e59e4d";
 }
 document.documentElement.style.setProperty("--color", color);

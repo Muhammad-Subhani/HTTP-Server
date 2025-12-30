@@ -22,7 +22,7 @@
 
 .page-heading:hover {
   transform: scale(1.1) !important;
-  text-shadow: 2px 2px 5px tan;
+  text-shadow: 2px 2px 5px #e59e4d;
 }
 
 .head-description {
@@ -39,13 +39,13 @@
 
 .head-description:hover {
   transform: scale(1.05) !important;
-  text-shadow: 2px 2px 2px tan;
+  text-shadow: 2px 2px 2px #e59e4d;
 }
 
 /* ColorScheme Overiding */
 .head-description:hover {
   transform: scale(1.05) !important;
-  text-shadow: 2px 2px 2px tan;
+  text-shadow: 2px 2px 2px #e59e4d;
 }
 
 .active-category {
@@ -73,7 +73,7 @@
 }
 
 .header-title:hover {
-  color: rgb(218, 149, 29)!important;
+  color: rgb(218, 149, 29) !important;
 }
 
 .footer-line {
@@ -97,19 +97,20 @@
 .footer-sec-head {
   color: rgb(218, 149, 29) !important;
 }
-.special{
-width: 40vw;
-height: 400px;
+.special {
+  width: 40vw;
+  height: 400px;
 }
-#joggers{
+#joggers {
   width: 40vw;
 }
 /* .pro:hover{
   box-shadow: 1.5px 1.5px 5px 2px goldenrod;
 } */
- .product:hover{
-    box-shadow: 1.5px 1.5px 5px 2px rgb(218, 149, 29);
- }
-#Formal{
-width: 40vw;  
+.product:hover {
+  box-shadow: 1.5px 1.5px 5px 2px rgb(218, 149, 29);
 }
+#Formal {
+  width: 40vw;
+}
+

@@ -11,13 +11,13 @@
 .footer-line {
   width: 70vw;
   color: #99a1af;
-  background-color: tan;
+  background-color: #e59e4d;
   height: 2px;
   transition: all 1s ease;
 }
 
 .footer-line:hover {
-  color: tan;
+  color: #e59e4d;
   transform: scale(1.05);
 }
 
@@ -32,9 +32,9 @@
 
 .footer-title:hover {
   transform: scale(1.25);
-  color: rgba(210, 180, 140, 0.7);
+  color: #e59e4d;
   /* background-color: white; */
-  /* border: 2px solid tan; */
+  /* border: 2px solid #e59e4d; */
 }
 
 .copyright {
@@ -54,7 +54,7 @@
   color: #000;
   /* background-color: rgba(210, 180, 140, 0.7); */
   background-color: white;
-  border: 2px solid tan;
+  border: 2px solid #e59e4d;
 }
 
 .flex-col {
@@ -97,7 +97,7 @@
   margin: 0;
   margin-bottom: 1vh;
   font-family: "Product Sans";
-  color: rgba(210, 180, 140, 0.7);
+  color: #e59e4d;
   transition: all 0.6s ease;
 }
 
@@ -130,6 +130,6 @@
 }
 
 .github-logo:hover {
-  color: rgba(210, 180, 140, 0.7);
+  color: #e59e4d;
   transform: scale(1.1);
 }

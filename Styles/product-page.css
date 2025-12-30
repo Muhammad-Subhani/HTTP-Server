@@ -182,7 +182,7 @@
 
 .head-description:hover {
   transform: scale(1.05) !important;
-  text-shadow: 2px 2px 2px tan;
+  text-shadow: 2px 2px 2px #e59e4d;
 }
 
 .active-category {

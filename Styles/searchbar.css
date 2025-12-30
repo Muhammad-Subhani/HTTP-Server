@@ -65,7 +65,7 @@ input {
   transition: all 1s;
 }
 #categories:hover {
-  color: tan;
+  color: #e59e4d;
   transform: translateY(-1px);
 }
 

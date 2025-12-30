@@ -24,3 +24,10 @@ setInterval(() => {
   chalo();
 }, 4000);
 
+function scrollToProducts() {
+  const productSection = document.getElementById("Our-Products");
+  productSection.scrollIntoView({
+    behaviour: "smooth",
+    block: "center",
+  });
+}

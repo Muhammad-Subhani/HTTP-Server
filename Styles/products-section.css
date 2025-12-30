@@ -52,7 +52,7 @@
   margin-bottom: 4vh;
 }
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .category {
@@ -67,11 +67,11 @@
 }
 .category:hover {
   transform: scale(1.05);
-  background-color: tan;
+  background-color: #e59e4d;
   color: #000;
 }
 
 .active-category {
-  background-color: tan;
+  background-color: #e59e4d;
   color: #000;
 }

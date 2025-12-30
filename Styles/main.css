@@ -86,7 +86,7 @@ body {
 
 .card:hover {
   transform: scale(1.05) translateY(-7px) !important;
-  box-shadow: 2px 2px 5px 3px tan;
+  box-shadow: 2px 2px 5px 3px #e59e4d;
 }
 
 @keyframes fadeEffect {
@@ -126,8 +126,8 @@ body {
 }
 
 #add-to-cart {
-  background-color: tan;
-  border: 2px solid tan;
+  background-color: #e59e4d;
+  border: 2px solid #e59e4d;
   border-radius: 20px;
   padding: 10px 20px;
   margin-top: 3vh;
