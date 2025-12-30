@@ -13,7 +13,13 @@
   clip-path: polygon(17% 0%, 84% 0%, 80% 100%, 20% 100%);
   transition: 1s ease;
 }
-
+.logo{
+    height: 44px;
+    width: 49px;
+    margin-left: 18px;
+    position: relative;
+    margin-top: -9px;
+}
 a {
   all: unset;
   cursor: pointer;
@@ -25,6 +31,7 @@ a {
   .header-title {
     padding-left: 13vw !important;
     padding-bottom: 0 !important;
+    display: flex;
   }
   .header-pages {
     padding-right: 13vw !important;

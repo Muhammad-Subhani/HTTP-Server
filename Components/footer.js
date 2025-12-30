@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
     <footer class="footer">
       <div class="footer-row-1">
         <div class="footer-row">
-          <h2 class="footer-title">CosmoBuy</h2>
+          <h2 class="footer-title"><img src="Assets/Images/globe.png" class = "logo">CosmoBuy</h2>
           <div class="footer-pages">
             <h3 class="footer-sec-head">Pages</h3>
             <div class="footer-section">

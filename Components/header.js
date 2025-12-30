@@ -15,7 +15,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <header class="header box-shadow">
-        <div class="header-title"><a href="./home.html">CosmoBuy</a></div>
+        <div class="header-title"><img src="Assets/Images/globe.png" class = "logo"><a href="./home.html">CosmoBUY</a></div>
         <div class="header-pages">
           <div class="header-element"><a href="./home.html">Home</a></div>
           <div class="header-element"><a href="./tech-products.html">Tech Gadgets</a></div>
