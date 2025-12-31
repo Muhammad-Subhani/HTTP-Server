@@ -41,7 +41,7 @@
   background-size: cover;
 }
 #db3 {
-  background: url(../Assets/Images/subscription-box.png);
+  background: url(../Assets/Images/Sneakers-Banner.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,10 +105,10 @@
   padding-top: 188px;
 }
 #tbtn {
-  background: linear-gradient(to right, #ffefba, #ffffff);
-  top: 0%;
+  background: linear-gradient(to right, #ed8014, #a73b0a);
+  top: 70%;
   position: relative;
-  right: -44%;
+  right: -15%;
   height: 101px;
   width: 270px;
   border-radius: 15px;
