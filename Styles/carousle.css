@@ -76,12 +76,12 @@
   font-weight: 400;
   color: white;
   text-align: right;
-  font-size: 150px;
-  padding-top: 50px;
+  font-size: 7vw;
+  padding-top: 4vh;
 }
 #sbtn {
   background: linear-gradient(to top, #3c3b3f, #605c3c);
-  top: -7%;
+  top: -15%;
   position: relative;
   right: -7%;
   height: 101px;
