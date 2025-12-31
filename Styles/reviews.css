@@ -1,6 +1,6 @@
 .reviews {
-  /* height: 50vh; */
   width: 100vw;
+  margin-bottom: 5vh;
 }
 #RH1 {
   font-family: "BBH Bogle";
@@ -18,13 +18,12 @@
   font-family: sans-serif;
 }
 .caro2 {
-  height: 362px;
   width: 91%;
   margin-top: 54px;
   /* border: 1px solid black; */
   display: flex;
   overflow: auto;
-  gap: 1em;
+  gap: 3vw;
 }
 
 .caro2::-webkit-scrollbar {
