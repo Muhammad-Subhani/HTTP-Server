@@ -8,9 +8,9 @@
 @font-face {
   font-family: "Product Sans";
   src:
-    url("../Assets/Fonts/Product Sans Regular.ttf") format("truetype"),
-    url("../Assets/Fonts/Product Sans Italic.ttf") format("truetype"),
-    url("../Assets/Fonts/Product Sans Bold.ttf") format("truetype");
+    url("../Assets/Fonts/Product-Sans-Regular.ttf") format("truetype"),
+    url("../Assets/Fonts/Product-Sans-Italic.ttf") format("truetype"),
+    url("../Assets/Fonts/Product-Sans-Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -93,6 +93,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
