@@ -23,14 +23,16 @@ void set_path_method(char *p, char *m, char req[]);
 int main() {
 
   // this is client struct (Form for understanding )
+
   typedef struct sockaddr_storage Client;
   Client my_client;
   socklen_t size = sizeof(my_client);
   memset(&my_client, 0, sizeof(my_client)); // setting initailly to 0
 
   // server part
+
   typedef struct addrinfo SERVER;
-  SERVER my_server, *res;
+  SERVER my_server, *res, *node;
   memset(&my_server, 0, sizeof(my_server));
   // these are just the suggestions to follow by the server
   my_server.ai_family = AF_INET;
@@ -39,7 +41,7 @@ int main() {
   // this will fill the server struct on its own
   int status = getaddrinfo(NULL, "8080", &my_server, &res);
   // this function returns 0 on success so check if fails
-  if (status != 0) {
+  if (status < 0) {
     fprintf(stderr, "ERROR HAPPENED " RED "!!"
                     "\n" RESET);
     return 1;
@@ -48,16 +50,28 @@ int main() {
   printf("Created the Structure for Server and Client !\n");
 
   // making the socket (file descriptor)
-  int my_socket = socket(AF_INET, res->ai_socktype, 0);
-  printf("Created the socket ->" RED "%d"
-         "\n" RESET,
-         my_socket);
+  int my_socket;
+  for (node = res; node != NULL; node = node->ai_next) {
 
-  // binding port number to our server socket (like a telephone number )
-  int binding = bind(my_socket, res->ai_addr, res->ai_addrlen);
+    my_socket = socket(AF_INET, res->ai_socktype, 0);
+    if (my_socket < 0)
+      continue;
+    printf("Created the socket ->" RED "%d"
+           "\n" RESET,
+           my_socket);
 
-  printf("Binded Successfully " RED "!!"
-         "\n" RESET);
+    // binding port number to our server socket (like a telephone number )
+    int binding = bind(my_socket, res->ai_addr, res->ai_addrlen);
+
+    if (binding < 0) {
+      close(my_socket);
+      continue;
+    }
+    printf("Binded Successfully " RED "!!"
+           "\n" RESET);
+
+    break;
+  }
 
   // server now ready to listen 10 requests in a row
   listen(my_socket, 10);
@@ -67,22 +81,32 @@ int main() {
   // after the listen we make a infinite loop so that no matter on how many
   // browsers you open , how many requests one client sends the localhost you
   // will get the resposnse repeate the accept
+  pid_t pid;
   while (1) {
     char path[100], method[100];
     char req[2048];
 
     // when client gets attached make its own socket
     int new_client = accept(my_socket, (struct sockaddr *)&my_client, &size);
-
+    if (new_client < 0)
+      continue;
     printf("Looking for Connection\n");
-    // request that client sends
-    int received_req = recv(new_client, req, sizeof(req), 0);
-    printf("Received request " RED "!!"
-           "\n" RESET);
-    req[received_req] = '\0';
-    if (received_req > 0) {
-      set_path_method(path, method, req);
-      Render(path, method, new_client, req);
+    pid = fork();
+    if (pid < 0) {
+      printf("This Child process FAiled !!\n");
+      continue;
+    }
+    if (pid == 0) {
+      // request that client sends
+      int received_req = recv(new_client, req, sizeof(req), 0);
+      printf("Received request " RED "!!"
+             "\n" RESET);
+      req[received_req] = '\0';
+      if (received_req > 0) {
+        set_path_method(path, method, req);
+        Render(path, method, new_client, req);
+      }
+      exit(0);
     }
     close(new_client);
   }
@@ -138,7 +162,6 @@ void Render(char path[], char method[], int new_client, char *req) {
   if (fptr == NULL) {
     char *err = "HTTP/1.1 404 Not Found\r\nContent-Type :0\r\n\r\n";
     send(new_client, err, strlen(err), 0);
-    return;
   }
   // shift the file pointer to end of file At the last chracter (0 offset !)
   fseek(fptr, 0, SEEK_END);
