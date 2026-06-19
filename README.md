@@ -42,10 +42,10 @@ Then open your browser and go to `http://localhost:8080`
  
 - [x] Serve static files
 - [ ] Handle GET requests
-- [ ] Handle POST requests
+- [ ] Handle POST request
 - [ ] Routing system
 - [ ] Dynamic content support
-- [ ] Multi-threading for concurrent connections
+- [x] Multi-threading for concurrent connections
 ## Author
  
 **Muhammad Subhani**  
