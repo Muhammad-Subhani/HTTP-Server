@@ -4,9 +4,11 @@
 #include <arpa/inet.h>
 #include <netdb.h>
 #include <netinet/in.h>
+#include <poll.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/poll.h>
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -81,35 +83,68 @@ int main() {
   // after the listen we make a infinite loop so that no matter on how many
   // browsers you open , how many requests one client sends the localhost you
   // will get the resposnse repeate the accept
-  pid_t pid;
+
+  // poll part here
+  struct pollfd pfds[100];
+  int num_fds = 0;
+  pfds[0].fd = my_socket;
+  pfds[0].events = POLLIN;
+  num_fds++;
+
   while (1) {
+
     char path[100], method[100];
     char req[2048];
 
-    // when client gets attached make its own socket
-    int new_client = accept(my_socket, (struct sockaddr *)&my_client, &size);
-    if (new_client < 0)
-      continue;
-    printf("Looking for Connection\n");
-    pid = fork();
-    if (pid < 0) {
-      printf("This Child process FAiled !!\n");
-      continue;
+    // make poll => return the number of structs that have been faced the
+    // particular action we want
+    int polling = poll(pfds, num_fds, -1);
+    if (polling < 0) {
+      printf("Polling failed !!\n");
+      break;
     }
-    if (pid == 0) {
-      // request that client sends
-      int received_req = recv(new_client, req, sizeof(req), 0);
-      printf("Received request " RED "!!"
-             "\n" RESET);
-      req[received_req] = '\0';
-      if (received_req > 0) {
-        set_path_method(path, method, req);
-        Render(path, method, new_client, req);
+
+    for (int i = 0; i < num_fds; i++) {
+
+      if (pfds[i].fd == -1)
+        continue;
+
+      if (pfds[i].revents & POLLIN) {
+        // here for parent the POLLIN means new client want to join
+        if (pfds[i].fd == my_socket) {
+          int new_client =
+              accept(my_socket, (struct sockaddr *)&my_client, &size);
+          if (new_client < 0)
+            continue;
+          pfds[num_fds].fd = new_client;
+          pfds[num_fds].events = POLLIN;
+          printf("New Client is made and given Descriptor %d\n", new_client);
+          num_fds++;
+        }
+
+        else {
+          int receiving = recv(pfds[i].fd, req, sizeof(req) - 1, 0);
+          if (receiving > 0) {
+            req[receiving] = '\0';
+            printf("Received request " RED "!!"
+                   "\n" RESET);
+            set_path_method(path, method, req);
+            Render(path, method, pfds[i].fd, req);
+          } else if (receiving == 0) {
+            printf("Client having Socket Descriptor %d has gracefully "
+                   "Disconnected !\n",
+                   pfds[i].fd);
+            close(pfds[i].fd);
+            pfds[i].fd = -1;
+          } else if (receiving < 0) {
+            close(pfds[i].fd);
+            pfds[i].fd = -1;
+          }
+        }
       }
-      exit(0);
     }
-    close(new_client);
   }
+
   close(my_socket);
   freeaddrinfo(res);
 }
